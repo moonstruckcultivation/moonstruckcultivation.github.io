@@ -76,20 +76,43 @@ main {
   align-items: center;
 }
 
-.date {
-  margin: 0 0 10px;
-  color: #CC6536;
-  font-size: 16px;
-  line-height: 1.2;
+.event-series,
+.event-date,
+.event-title,
+.event-subtitle {
+  margin: 0;
+  line-height: 1.45;
 }
 
-h1 {
-  margin: 0 0 17px;
+.event-series {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.event-date {
+  margin-top: 5px;
+  color: #CC6536;
+  font-size: 16px;
+}
+
+.event-title {
+  margin-top: 5px;
   color: #CC6536;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 1.25;
+  letter-spacing: 0.05em;
+}
+
+.event-subtitle {
+  margin-top: 5px;
+  color: #CC6536;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.event-details .details-link {
+  margin-top: 17px;
 }
 
 .details-link {
