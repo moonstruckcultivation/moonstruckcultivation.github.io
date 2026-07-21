@@ -1,6 +1,5 @@
 html {
   background: #fff;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -9,9 +8,9 @@ html {
 
 body {
   margin: 0;
+  color: #222;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
-  color: #222;
   text-align: center;
 }
 
@@ -19,18 +18,18 @@ main {
   width: min(760px, 100%);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 4.5vh 20px 26px;
+  padding: 3.5vh 20px 24px;
 }
 
 .logo {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .logo img {
   display: block;
-  width: 320px;
-  max-width: 80vw;
+  width: 336px;
+  max-width: 82vw;
   height: auto;
 }
 
@@ -40,167 +39,99 @@ main {
   align-items: center;
 }
 
-.main-nav a {
-  margin: 8px 0;
+.main-nav > a,
+.menu-link {
+  margin: 0;
   color: #222;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  line-height: 1.2;
   text-decoration: none;
   transition: opacity 0.2s;
 }
 
-.main-nav a:hover,
-.details:hover,
-.text-link:hover {
+.main-nav > a:hover,
+.menu-link:hover,
+.details-link:hover {
   opacity: 0.45;
 }
 
-.event {
-  margin: 27px 0 42px;
+.main-nav > a:first-child {
+  margin-bottom: 34px;
+}
+
+.next-gathering {
+  margin: 0 0 34px;
+}
+
+.menu-link {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .date {
-  margin: 0 0 9px;
+  margin: 0 0 10px;
   font-size: 16px;
+  line-height: 1.2;
 }
 
 h1 {
-  margin: 0 0 14px;
+  margin: 0 0 17px;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.08em;
+  line-height: 1.25;
 }
 
-.details {
+.details-link {
   color: #222;
   font-size: 14px;
   text-decoration: none;
   transition: opacity 0.2s;
 }
 
+.main-nav > a:nth-last-child(2) {
+  margin-bottom: 28px;
+}
+
 footer {
-  padding: 26px 0 18px;
+  padding-top: 58px;
   font-size: 14px;
   line-height: 1.6;
 }
 
-/* Interior pages */
-
-.page {
-  max-width: 720px;
-  text-align: left;
-}
-
-.page .logo {
-  margin-bottom: 42px;
-}
-
-.page-header {
-  margin-bottom: 38px;
-}
-
-.page-title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.page-copy {
-  font-size: 17px;
-  line-height: 1.85;
-}
-
-.page-copy p {
-  margin: 0 0 1.35em;
-}
-
-.tagline {
-  margin: 2.3em 0;
-  font-size: 18px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.meta {
-  margin: 0 0 32px;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-.archive-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.archive-year {
-  margin: 0 0 22px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.archive-item {
-  margin-bottom: 26px;
-}
-
-.archive-item a,
-.text-link {
-  color: #222;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.archive-title {
-  display: block;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
-.archive-date {
-  display: block;
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 42px;
-  color: #222;
-  font-size: 14px;
-  text-decoration: none;
-}
-
 @media (max-width: 600px) {
   main {
-    padding-top: 5vh;
+    padding-top: 4.5vh;
   }
 
   .logo {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
   }
 
   .logo img {
-    width: 264px;
+    width: 280px;
   }
 
-  .main-nav a {
-    margin: 9px 0;
+  .main-nav > a:first-child {
+    margin-bottom: 31px;
   }
 
-  .event {
-    margin: 30px 0 44px;
+  .menu-link {
+    margin-bottom: 25px;
   }
 
-  .page {
-    padding-left: 24px;
-    padding-right: 24px;
+  .next-gathering {
+    margin-bottom: 32px;
   }
 
-  .page-copy {
-    font-size: 16px;
-    line-height: 1.8;
+  footer {
+    padding-top: 52px;
   }
 }
