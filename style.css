@@ -709,3 +709,101 @@ html[lang="ja"] .about-logo {
     line-height: 1.55;
   }
 }
+
+/* Next Gathering text refinements — v11 */
+.details-event-series,
+.details-event-date {
+  font-size: 13px;
+}
+
+.event-copy {
+  width: min(620px, 100%);
+  margin: 70px auto 0;
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.015em;
+  text-align: left;
+}
+
+.event-copy p {
+  margin: 0 0 2em;
+}
+
+.event-summary {
+  margin-bottom: 68px;
+}
+
+.event-summary a {
+  color: #CC6536;
+  text-underline-offset: 0.18em;
+  transition: opacity 0.2s ease;
+}
+
+.event-summary a:hover {
+  opacity: 0.55;
+}
+
+.event-description {
+  margin-bottom: 82px;
+}
+
+.profiles h2 {
+  margin: 0 0 46px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.profile + .profile {
+  margin-top: 66px;
+}
+
+.profile h3 {
+  margin: 0 0 14px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.profile p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .details-event-series,
+  .details-event-date {
+    font-size: 12px;
+  }
+
+  .event-copy {
+    margin-top: 54px;
+    font-size: 14px;
+    line-height: 1.95;
+  }
+
+  .event-summary {
+    margin-bottom: 54px;
+  }
+
+  .event-description {
+    margin-bottom: 66px;
+  }
+
+  .profiles h2 {
+    margin-bottom: 36px;
+    font-size: 16px;
+  }
+
+  .profile + .profile {
+    margin-top: 52px;
+  }
+
+  .profile h3 {
+    font-size: 15px;
+  }
+}
