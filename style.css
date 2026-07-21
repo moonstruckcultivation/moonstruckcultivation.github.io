@@ -950,3 +950,97 @@ html[lang="ja"] .about-logo {
 .details-event-heading .details-event-series {
   margin-bottom: 1.5em;
 }
+
+/* Shared hierarchy headers — v16 */
+.page-section-title {
+  margin: 0;
+  color: #222;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  text-align: left;
+}
+
+/* Keep the hierarchy title consistent across About / Next Gathering / Archive. */
+.details-kicker {
+  margin: 0 0 52px;
+}
+
+.archive-page {
+  width: min(680px, 100%);
+  padding: 78px 40px 64px;
+  text-align: left;
+}
+
+.archive-header {
+  margin-bottom: 72px;
+}
+
+.archive-section {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 22px;
+}
+
+.archive-year {
+  margin: 0 0 28px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-item {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 0 22px;
+}
+
+.archive-item a {
+  color: #222;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.archive-item a:hover {
+  opacity: 0.45;
+}
+
+.archive-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.archive-date {
+  display: block;
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .page-section-title {
+    font-size: 34px;
+  }
+
+  .archive-page {
+    padding: 52px 24px 48px;
+  }
+
+  .archive-header {
+    margin-bottom: 54px;
+  }
+
+  .details-kicker {
+    margin-bottom: 42px;
+  }
+}
