@@ -1,133 +1,136 @@
+style.css
 html{
-    height:100%;
+
+background:#fff;
+
 }
 
 body{
 
-    margin:0;
+margin:0;
 
-    background:#ffffff;
+font-family:"Libre Franklin",sans-serif;
 
-    color:#222;
+font-weight:300;
 
-    font-family:"Cormorant Garamond", serif;
+color:#222;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:100vh;
+text-align:center;
 
 }
 
 main{
 
-    text-align:center;
+max-width:760px;
 
-    width:90%;
+margin:auto;
 
-    max-width:520px;
+padding-top:12vh;
+
+padding-bottom:12vh;
 
 }
 
 .logo{
 
-    margin-bottom:48px;
-
-    letter-spacing:.25em;
-
-    font-size:13px;
+margin-bottom:90px;
 
 }
 
-h1{
+.logo img{
 
-    font-size:40px;
+width:220px;
 
-    font-weight:400;
-
-    margin:0 0 70px 0;
+height:auto;
 
 }
 
 nav{
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:42px;
-
-}
-
-a{
-
-    color:#222;
-
-    text-decoration:none;
-
-    transition:.25s;
+align-items:center;
 
 }
 
-a:hover{
+nav>a{
 
-    opacity:.45;
+font-size:18px;
+
+color:#222;
+
+text-decoration:none;
+
+margin:34px 0;
+
+transition:.2s;
+
+}
+
+nav>a:hover{
+
+opacity:.45;
 
 }
 
 .event{
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:10px;
+margin:80px 0 110px;
 
 }
 
 .label{
 
-    font-size:20px;
+font-size:15px;
+
+margin-bottom:18px;
 
 }
 
 .date{
 
-    font-size:22px;
+font-size:16px;
+
+margin-bottom:12px;
 
 }
 
-.title{
+h1{
 
-    letter-spacing:.08em;
+font-size:20px;
 
-    font-size:24px;
+font-weight:400;
+
+letter-spacing:.08em;
+
+margin:0 0 22px;
 
 }
 
 .details{
 
-    margin-top:8px;
+font-size:16px;
 
-    font-size:18px;
+text-decoration:none;
 
-}
-
-@media (max-width:700px){
-
-h1{
-
-    font-size:32px;
+color:#222;
 
 }
 
-.title{
+.details:hover{
 
-    font-size:21px;
+opacity:.45;
 
 }
+
+footer{
+
+font-size:14px;
+
+line-height:1.8;
+
+padding:80px 0 60px;
 
 }
