@@ -538,3 +538,16 @@ html[lang="ja"] .about-logo {
     font-size: 16px;
   }
 }
+
+
+/* v6 spacing tweak */
+.about-logo{
+  margin-top:52px;
+  margin-bottom:46px;
+}
+.about-logo img{
+  display:block;
+  width:340px;
+  max-width:82vw;
+  margin:0 auto;
+}
