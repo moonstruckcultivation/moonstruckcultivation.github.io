@@ -336,3 +336,93 @@ footer {
     margin-top: 84px;
   }
 }
+
+/* About page refinements — v3 */
+.about-page {
+  width: min(680px, 100%);
+  padding-top: 82px;
+}
+
+.about-header {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.language-switcher {
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.about-logo {
+  margin: 76px auto 88px;
+  text-align: center;
+}
+
+.about-logo img {
+  display: block;
+  width: 440px;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.language-content {
+  margin: 0 auto;
+}
+
+.word-notes {
+  margin-bottom: 78px;
+  text-align: center;
+}
+
+.tagline {
+  margin-bottom: 76px;
+  color: #CC6536;
+  text-align: center;
+}
+
+.tagline span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.venue-section h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding-top: 58px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-logo {
+    margin-top: 62px;
+    margin-bottom: 72px;
+  }
+
+  .about-logo img {
+    width: 360px;
+  }
+
+  .word-notes {
+    margin-bottom: 64px;
+  }
+
+  .tagline {
+    margin-bottom: 62px;
+  }
+
+  .tagline span {
+    font-size: 12px;
+  }
+}
