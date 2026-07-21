@@ -807,3 +807,135 @@ html[lang="ja"] .about-logo {
     font-size: 15px;
   }
 }
+
+
+/* Next Gathering refinements — v12 */
+.details-event-heading .details-event-series,
+.details-event-heading .details-event-date {
+  font-size: clamp(12px, 1.45vw, 15px);
+  line-height: 1.5;
+}
+
+.event-copy {
+  width: min(620px, 100%);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.event-information {
+  width: 100%;
+  margin-top: 66px;
+}
+
+.event-list > div {
+  grid-template-columns: 110px 1fr;
+  column-gap: 30px;
+  padding: 18px 0;
+  border-top: 1px solid #cfcfcf;
+}
+
+.event-list > div:last-child {
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.event-list dt,
+.event-list dd {
+  font-weight: 500;
+}
+
+.event-list dt {
+  color: #222;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.event-list dd {
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.event-list dd span {
+  color: #555;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.event-list a {
+  color: #CC6536;
+  text-decoration: none;
+}
+
+.event-description {
+  margin-top: 72px;
+  font-size: 16px;
+  line-height: 2.05;
+}
+
+.event-description p {
+  margin: 0 0 2em;
+}
+
+.profiles {
+  margin-top: 82px;
+}
+
+.profiles h2 {
+  margin: 0 0 42px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile + .profile {
+  margin-top: 54px;
+}
+
+.profile h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .details-event-heading .details-event-series,
+  .details-event-heading .details-event-date {
+    font-size: 12px;
+  }
+
+  .event-information {
+    margin-top: 52px;
+  }
+
+  .event-list > div {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    column-gap: 18px;
+    padding: 16px 0;
+  }
+
+  .event-list dt {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .event-list dd {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .event-description {
+    margin-top: 58px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .profiles {
+    margin-top: 68px;
+  }
+}
