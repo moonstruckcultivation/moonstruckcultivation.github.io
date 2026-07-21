@@ -79,7 +79,7 @@ main {
   margin: 0 0 10px;
   font-size: 16px;
   line-height: 1.2;
-  color: #66707a;
+  color: #D96B3B;
 }
 
 h1 {
@@ -88,11 +88,11 @@ h1 {
   font-weight: 300;
   letter-spacing: 0.08em;
   line-height: 1.25;
-  color: #66707a;
+  color: #D96B3B;
 }
 
 .details-link {
-  color: #66707a;
+  color: #D96B3B;
   font-size: 14px;
   text-decoration: none;
   transition: opacity 0.2s;
