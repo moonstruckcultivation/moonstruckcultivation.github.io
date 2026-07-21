@@ -945,3 +945,8 @@ html[lang="ja"] .about-logo {
 .details-event-heading .details-event-date {
   color: #111;
 }
+
+/* Next Gathering refinements — v15 */
+.details-event-heading .details-event-series {
+  margin-bottom: 1.5em;
+}
