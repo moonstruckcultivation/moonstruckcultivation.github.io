@@ -538,15 +538,144 @@ html[lang="ja"] .about-logo {
     font-size: 16px;
   }
 }
-.hero-logo-link {
-  display: inline-block;
-  line-height: 0;
+
+/* Next Gathering / Details page — v8 */
+.details-page {
+  width: min(760px, 100%);
+  padding: 66px 32px 64px;
+  text-align: center;
 }
 
-.hero-logo-link img {
+.details-header {
+  margin-bottom: 44px;
+}
+
+.details-kicker {
+  margin: 0 0 15px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.details-title {
+  margin: 0;
+  color: #CC6536;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.25;
+}
+
+.flyer-link {
   display: block;
+  width: min(660px, 100%);
+  margin: 0 auto;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
-.hero-logo-link:hover {
-  opacity: 0.8;
+.flyer-link:hover {
+  opacity: 0.9;
+}
+
+.event-flyer {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.event-information {
+  width: min(560px, 100%);
+  margin: 74px auto 0;
+  text-align: left;
+}
+
+.event-information h2 {
+  margin: 0 0 40px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.event-list {
+  margin: 0;
+}
+
+.event-list > div {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  column-gap: 28px;
+  padding: 21px 0;
+  border-top: 1px solid #ddd;
+}
+
+.event-list > div:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.event-list dt,
+.event-list dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.event-list dt {
+  font-weight: 500;
+}
+
+.event-list dd {
+  font-weight: 300;
+}
+
+.event-list dd span {
+  color: #666;
+  font-size: 13px;
+}
+
+.details-back-link {
+  margin: 76px auto 0;
+}
+
+@media (max-width: 600px) {
+  .details-page {
+    padding: 48px 20px 48px;
+  }
+
+  .details-header {
+    margin-bottom: 32px;
+  }
+
+  .details-title {
+    font-size: 20px;
+  }
+
+  .event-information {
+    margin-top: 56px;
+  }
+
+  .event-information h2 {
+    margin-bottom: 28px;
+  }
+
+  .event-list > div {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .event-list dt {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .event-list dd {
+    font-size: 15px;
+  }
+
+  .details-back-link {
+    margin-top: 60px;
+  }
 }
