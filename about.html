@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About — Moonstruck Cultivation</title>
+  <meta name="description" content="Moonstruck Cultivationについて。触れて考え、知って感じる、小さな学びの時空を生み出すリアルイベントプロジェクトです。">
+
   <link rel="icon" href="favicon.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <main class="page">
-    <a class="logo" href="index.html">
-      <img src="logo.png" alt="Moonstruck Cultivation">
-    </a>
+  <main class="about-page">
+    <header class="about-header">
+      <h1 class="about-title">About</h1>
 
-    <header class="page-header">
-      <h1 class="page-title">About</h1>
+      <nav class="language-switcher" aria-label="Language selection">
+        <button type="button" class="language-button is-active" data-language="ja" aria-pressed="true">日本語</button>
+        <span aria-hidden="true">｜</span>
+        <button type="button" class="language-button" data-language="en" aria-pressed="false">English</button>
+      </nav>
     </header>
 
-    <div class="page-copy">
-      <p>Moonstruck Cultivation is a project initiated by editor Kosuke Ide and Zensei Shinsha. Beginning in August 2026, it creates a real space for encounters across art, craft, food, design, care, nature, community, music, play, philosophy, literature, science, and film.</p>
+    <article id="content-ja" class="language-content is-active" lang="ja">
+      <div class="word-notes" aria-label="名称の意味">
+        <p><span>Moonstruck</span>：空想に耽った／ボーッとした／狂気じみた</p>
+        <p><span>Cultivation</span>：耕すこと／栽培／育成／培養／教養／洗練</p>
+      </div>
 
-      <p>Rather than gathering around a fixed discipline or theme, we invite people to bring what they value: an object, a book, a sound, an idea, a practice, or a question. Through sharing, listening, and looking closely, familiar things may begin to appear otherwise.</p>
+      <p class="tagline">Gather Beyond Daylight.<br><span>昼間の向こう側で会いましょう。</span></p>
 
-      <p class="tagline">where touching becomes thinking,<br>and knowing becomes feeling.</p>
+      <div class="about-copy">
+        <p>「Moonstruck Cultivation（ムーンストラック・カルティベーション）」は、編集者の井出幸亮と「全生新舎」の企画による、「触れて考え、知って感じる」小さな学びの時空を生み出すリアルイベントプロジェクトです。</p>
 
-      <p>Our gatherings take place at the Haruchika Noguchi Memorial Music Room in Komae, Tokyo, with the cooperation of Zensei Shinsha.</p>
-    </div>
+        <p class="fields">芸術／工芸／食／身体／遊び／生活／歴史／デザイン／運動／ケア／自然／コミュニティ／音楽／哲学／経済／ホビー／装い／文学／科学／映像／実験／冒険　その他なんでも。</p>
 
-    <a class="back-link" href="index.html">← Back</a>
+        <p>創造への関心を通じて人が集い、コミュニケーションすることで、アイデアや技術、記憶、問い、喜びが静かに循環していくような、ささやかな場所を創出することを目指しています。ともに見る、聴く、話す、触る、食べる、動く、感じる体験から得る、小さな気付きや遊びの楽しみを、そっとシェアできたら。</p>
+
+        <p>撒かれた種が発芽し、育ち、花開き、どこか遠くへその種が飛んでいき、その場で新たな生命が芽吹く。そんな過程では、風や虫や鳥などの媒介者の存在が欠かせません。月の光に照らされて育つ、何だか奇妙な植物みたいに。この場で起こるさまざまな媒介者の交わりを通じて、たくさんのユニークな種が撒かれることを願いつつ、そこから何が育ってゆくのか、ゆっくりと見守っていきたいと思います。</p>
+      </div>
+
+      <section class="venue-section" aria-labelledby="venue-ja-title">
+        <h2 id="venue-ja-title">イベント会場について</h2>
+        <p>「ムーンストラック・カルティベーション」のイベント会場となる東京・狛江「野口晴哉記念音楽室」は、日本の整体の創始者であり思想家でもあった野口晴哉（のぐち・はるちか）（1911–1976）の旧居です。木々に囲まれた、古き良き邸宅の中に設えた55畳の土蔵造りの音楽室であるこの空間を「編集と翻訳の稽古場」として運営する「全生新舎」（主宰：野口晋哉）の協力のもと、多彩な催しを企画していきます。</p>
+      </section>
+    </article>
+
+    <article id="content-en" class="language-content" lang="en" hidden>
+      <div class="word-notes" aria-label="Meaning of the name">
+        <p><span>Moonstruck</span>: lost in reverie / dazed / touched by madness</p>
+        <p><span>Cultivation</span>: tilling / growing / nurturing / culture / refinement</p>
+      </div>
+
+      <p class="tagline">Gather Beyond Daylight.</p>
+
+      <div class="about-copy">
+        <p>Moonstruck Cultivation is a real-world event project initiated by editor Kosuke Ide and Zensei Shinsha, creating intimate spaces for learning—<span class="accent-text">where touching becomes thinking, and knowing becomes feeling.</span></p>
+
+        <p class="fields">Art. Craft. Food. The body. Play. Everyday life. History. Design. Movement. Care. Nature. Community. Music. Philosophy. Economics. Hobbies. Dress. Literature. Science. Film. Experimentation. Adventure. Or anything else that invites curiosity.</p>
+
+        <p>We imagine a modest place where people gather around a shared curiosity for making and creating; where ideas, skills, memories, questions, and quiet joys can circulate freely. Through seeing, listening, speaking, touching, eating, moving, and feeling together, we hope to share small discoveries and the quiet delight of play.</p>
+
+        <p>A seed is sown. It germinates, grows, flowers, and one day releases its seeds to the wind, where they may take root somewhere far away. Along the way, wind, insects, birds, and countless unseen companions make the journey possible. In that sense, perhaps Moonstruck Cultivation is something like a strange plant, growing beneath the light of the moon.</p>
+
+        <p>We hope this gathering can become a place of such quiet exchanges, where people become carriers of one another’s ideas, and where unexpected seeds are scattered into the world. We’d like to begin simply, slowly, and with joy—and see what grows.</p>
+      </div>
+
+      <section class="venue-section" aria-labelledby="venue-en-title">
+        <h2 id="venue-en-title">About the Venue</h2>
+        <p>Moonstruck Cultivation takes place at the Haruchika Noguchi Memorial Music Room in Komae, Tokyo—the former residence of Haruchika Noguchi (1911–1976), the founder of Seitai and an influential Japanese thinker.</p>
+        <p>Nestled among trees, the Music Room is a spacious, earthen-walled hall built in the traditional <i>dozo</i> style, set within a beautifully preserved residence. Today, it is cared for by Zensei Shinsha, an initiative directed by Shinya Noguchi that serves as a place for the practice of editing and translation.</p>
+        <p>In collaboration with Zensei Shinsha, Moonstruck Cultivation will present a wide range of gatherings, conversations, and experiences in this singular setting.</p>
+      </section>
+    </article>
+
+    <a class="back-link" href="index.html">← Home</a>
   </main>
 </body>
 </html>
