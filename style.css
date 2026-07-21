@@ -482,3 +482,59 @@ html[lang="ja"] .about-logo {
     font-size: 15px;
   }
 }
+
+/* Confirmed spacing fix — v4 */
+.about-title {
+  font-size: 20px;
+}
+
+.about-logo {
+  margin-top: 22px !important;
+  margin-bottom: 34px !important;
+}
+
+html[lang="ja"] .about-logo {
+  margin-bottom: 44px !important;
+}
+
+.tagline {
+  margin-bottom: 52px;
+}
+
+.venue-section {
+  margin-top: 76px;
+}
+
+.venue-section h2 {
+  margin-bottom: 28px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 19px;
+  }
+
+  .about-logo {
+    margin-top: 18px !important;
+    margin-bottom: 28px !important;
+  }
+
+  html[lang="ja"] .about-logo {
+    margin-bottom: 36px !important;
+  }
+
+  .tagline {
+    margin-bottom: 44px;
+  }
+
+  .venue-section {
+    margin-top: 64px;
+  }
+
+  .venue-section h2 {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+}
