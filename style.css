@@ -365,7 +365,7 @@ footer {
 
 .about-logo img {
   display: block;
-  width: 440px;
+  width: 500px;
   max-width: 90%;
   height: auto;
   margin: 0 auto;
@@ -411,7 +411,7 @@ footer {
   }
 
   .about-logo img {
-    width: 360px;
+    width: 420px;
   }
 
   .word-notes {
@@ -489,12 +489,12 @@ html[lang="ja"] .about-logo {
 }
 
 .about-logo {
-  margin-top: 22px !important;
-  margin-bottom: 34px !important;
+  margin-top: 36px !important;
+  margin-bottom: 52px !important;
 }
 
 html[lang="ja"] .about-logo {
-  margin-bottom: 44px !important;
+  margin-bottom: 62px !important;
 }
 
 .tagline {
@@ -537,17 +537,4 @@ html[lang="ja"] .about-logo {
     margin-bottom: 24px;
     font-size: 16px;
   }
-}
-
-
-/* v6 spacing tweak */
-.about-logo{
-  margin-top:52px;
-  margin-bottom:46px;
-}
-.about-logo img{
-  display:block;
-  width:340px;
-  max-width:82vw;
-  margin:0 auto;
 }
