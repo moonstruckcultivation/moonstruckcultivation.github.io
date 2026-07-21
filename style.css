@@ -1,136 +1,110 @@
-style.css
-html{
 
-background:#fff;
-
+html {
+  background: #fff;
 }
 
-body{
-
-margin:0;
-
-font-family:"Libre Franklin",sans-serif;
-
-font-weight:300;
-
-color:#222;
-
-text-align:center;
-
+body {
+  margin: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
 }
 
-main{
-
-max-width:760px;
-
-margin:auto;
-
-padding-top:12vh;
-
-padding-bottom:12vh;
-
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 6vh 20px 5vh;
 }
 
-.logo{
-
-margin-bottom:90px;
-
+.logo {
+  margin-bottom: 42px;
 }
 
-.logo img{
-
-width:220px;
-
-height:auto;
-
+.logo img {
+  width: 290px;
+  max-width: 75vw;
+  height: auto;
 }
 
-nav{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav>a{
-
-font-size:18px;
-
-color:#222;
-
-text-decoration:none;
-
-margin:34px 0;
-
-transition:.2s;
-
+nav > a {
+  font-size: 18px;
+  color: #222;
+  text-decoration: none;
+  margin: 12px 0;
+  transition: opacity 0.2s;
 }
 
-nav>a:hover{
-
-opacity:.45;
-
+nav > a:hover {
+  opacity: 0.45;
 }
 
-.event{
-
-margin:80px 0 110px;
-
+.event {
+  margin: 42px 0 54px;
 }
 
-.label{
-
-font-size:15px;
-
-margin-bottom:18px;
-
+.label {
+  font-size: 15px;
+  margin-bottom: 12px;
 }
 
-.date{
-
-font-size:16px;
-
-margin-bottom:12px;
-
+.date {
+  font-size: 16px;
+  margin-bottom: 9px;
 }
 
-h1{
-
-font-size:20px;
-
-font-weight:400;
-
-letter-spacing:.08em;
-
-margin:0 0 22px;
-
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin: 0 0 16px;
 }
 
-.details{
-
-font-size:16px;
-
-text-decoration:none;
-
-color:#222;
-
+.details {
+  font-size: 16px;
+  text-decoration: none;
+  color: #222;
 }
 
-.details:hover{
-
-opacity:.45;
-
+.details:hover {
+  opacity: 0.45;
 }
 
-footer{
+footer {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 36px 0 28px;
+}
 
-font-size:14px;
+@media (max-width: 600px) {
+  main {
+    padding-top: 7vh;
+    padding-bottom: 6vh;
+  }
 
-line-height:1.8;
+  .logo {
+    margin-bottom: 38px;
+  }
 
-padding:80px 0 60px;
+  .logo img {
+    width: 240px;
+  }
 
+  nav > a {
+    margin: 13px 0;
+  }
+
+  .event {
+    margin: 44px 0 50px;
+  }
+
+  footer {
+    padding-top: 38px;
+  }
 }
