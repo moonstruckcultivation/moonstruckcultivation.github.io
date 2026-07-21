@@ -76,43 +76,20 @@ main {
   align-items: center;
 }
 
-.event-series,
-.event-date,
-.event-title,
-.event-subtitle {
-  margin: 0;
-  line-height: 1.45;
-}
-
-.event-series {
-  color: #222;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.event-date {
-  margin-top: 5px;
+.date {
+  margin: 0 0 10px;
   color: #CC6536;
   font-size: 16px;
+  line-height: 1.2;
 }
 
-.event-title {
-  margin-top: 5px;
+h1 {
+  margin: 0 0 17px;
   color: #CC6536;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.05em;
-}
-
-.event-subtitle {
-  margin-top: 5px;
-  color: #CC6536;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.event-details .details-link {
-  margin-top: 17px;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
 }
 
 .details-link {
@@ -700,5 +677,35 @@ html[lang="ja"] .about-logo {
 
   .details-back-link {
     margin-top: 60px;
+  }
+}
+
+
+/* v10: event title block on the Next Gathering page */
+.details-event-heading {
+  margin-top: 18px;
+  text-align: center;
+  color: #cc6536;
+}
+
+.details-event-heading p {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.details-event-heading .details-event-series {
+  color: #111;
+}
+
+@media (max-width: 640px) {
+  .details-event-heading {
+    margin-top: 14px;
+  }
+
+  .details-event-heading p {
+    font-size: 15px;
+    line-height: 1.55;
   }
 }
