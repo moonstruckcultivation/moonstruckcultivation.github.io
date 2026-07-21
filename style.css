@@ -939,3 +939,9 @@ html[lang="ja"] .about-logo {
     margin-top: 68px;
   }
 }
+
+
+/* Next Gathering refinements — v13 */
+.details-event-heading .details-event-date {
+  color: #111;
+}
