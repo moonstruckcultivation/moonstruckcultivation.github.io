@@ -951,15 +951,16 @@ html[lang="ja"] .about-logo {
   margin-bottom: 1.5em;
 }
 
-/* Shared hierarchy headers — v16 */
+/* Shared hierarchy headers — v17
+   Match the confirmed About heading across all three pages. */
 .page-section-title {
   margin: 0;
   color: #222;
-  font-size: 42px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.025em;
   line-height: 1.1;
-  text-align: left;
+  text-align: center;
 }
 
 /* Keep the hierarchy title consistent across About / Next Gathering / Archive. */
@@ -1029,7 +1030,7 @@ html[lang="ja"] .about-logo {
 
 @media (max-width: 600px) {
   .page-section-title {
-    font-size: 34px;
+    font-size: 19px;
   }
 
   .archive-page {
