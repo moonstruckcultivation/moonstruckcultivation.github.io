@@ -1,15 +1,21 @@
-Moonstruck Cultivation — About page update
+Moonstruck Cultivation — About page final update
 
-入っているファイル：
-- index.html（Aboutリンクは about.html に接続済み）
-- about.html
-- style.css（トップページ＋Aboutページ共通）
-- script.js（日本語／English切替）
+このフォルダ内の次のファイルを、GitHub Pagesの
+「moonstruckcultivation.github.io」フォルダへコピーしてください。
 
-設置方法：
-1. GitHub Desktopで moonstruckcultivation.github.io フォルダを開く。
-2. この4ファイルをそのフォルダへコピーし、既存の index.html と style.css は置き換える。
-3. logo.png と favicon.png はそのまま残す。
-4. GitHub Desktopで Commit → Push origin。
+・about.html
+・style.css
+・script.js
+・moonstruck-logo.jpg
 
-初期表示は日本語です。Aboutページ上部の「日本語｜English」で、その場で表示言語が切り替わります。
+index.html は、すでにAboutへのリンクが接続されていれば置き換え不要です。
+
+今回の修正：
+・ロゴ上下の余白を前版のおよそ半分に調整
+・和文表示時のみ、ロゴ下の余白を英語表示時より少し広く設定
+・Aboutの文字をさらに小さく調整
+・「昼間の向こう側で会いましょう。」から本文までの間隔を少し詰める
+・「イベント会場について／About the Venue」を少し大きくし、上の本文との間隔を詰める
+
+置き換え後、ブラウザに古い表示が残る場合は、Macでは
+Command + Shift + R で再読み込みしてください。

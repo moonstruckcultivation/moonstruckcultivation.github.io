@@ -426,3 +426,59 @@ footer {
     font-size: 12px;
   }
 }
+
+/* Final spacing refinements */
+.about-title {
+  font-size: 24px;
+}
+
+.about-logo {
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+
+html[lang="ja"] .about-logo {
+  margin-bottom: 52px;
+}
+
+.tagline {
+  margin-bottom: 58px;
+}
+
+.venue-section {
+  margin-top: 92px;
+}
+
+.venue-section h2 {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-logo {
+    margin-top: 32px;
+    margin-bottom: 38px;
+  }
+
+  html[lang="ja"] .about-logo {
+    margin-bottom: 44px;
+  }
+
+  .tagline {
+    margin-bottom: 48px;
+  }
+
+  .venue-section {
+    margin-top: 76px;
+  }
+
+  .venue-section h2 {
+    margin-bottom: 26px;
+    font-size: 15px;
+  }
+}
