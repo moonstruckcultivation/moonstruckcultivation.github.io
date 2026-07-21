@@ -19,7 +19,9 @@
 <body>
   <main>
     <div class="logo">
-      <img src="logo.png" alt="Moonstruck Cultivation">
+      <a href="about.html" class="hero-logo-link">
+  <img class="hero-logo" src="moonstruck-logo.jpg" alt="Moonstruck Cultivation">
+</a>
     </div>
 
     <nav aria-label="Main navigation">
