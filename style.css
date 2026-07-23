@@ -1070,3 +1070,7 @@ html[lang="ja"] .about-logo {
   margin-top: 3em !important;
   text-align: right;
 }
+
+
+.event-description-title{font-size:1.35rem;font-weight:600;}
+.event-description-quote p:first-child{font-style:italic;}
