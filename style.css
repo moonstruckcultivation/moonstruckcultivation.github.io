@@ -44,7 +44,7 @@ main {
   margin: 0;
   color: #222;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -1064,6 +1064,9 @@ html[lang="ja"] .about-logo {
 
 .event-description-quote p {
   margin-bottom: 0.7em;
+}
+.event-description-quote p:last-child {
+  text-align:right;
 }
 
 .event-description-signature {
