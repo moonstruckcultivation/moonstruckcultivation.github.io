@@ -1045,3 +1045,28 @@ html[lang="ja"] .about-logo {
     margin-bottom: 42px;
   }
 }
+
+
+/* Event overview refinements — v21 */
+.event-description-title {
+  margin: 0 0 3em;
+  color: #222;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: center;
+}
+
+.event-description-quote {
+  margin: 0 0 2.2em;
+}
+
+.event-description-quote p {
+  margin-bottom: 0.7em;
+}
+
+.event-description-signature {
+  margin-top: 3em !important;
+  text-align: right;
+}
