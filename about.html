@@ -12,9 +12,1088 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+html {
+  background: #fff;
+}
 
-  <link rel="stylesheet" href="style.css?v=17">
-  <script src="script.js?v=8" defer></script>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+main {
+  width: min(760px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3.5vh 20px 24px;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 36px;
+}
+
+.logo img {
+  display: block;
+  width: 336px;
+  max-width: 82vw;
+  height: auto;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav > a,
+.menu-link {
+  margin: 0;
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.main-nav > a:hover,
+.menu-link:hover,
+.details-link:hover,
+.back-link:hover {
+  opacity: 0.45;
+}
+
+.main-nav > a:first-child {
+  margin-bottom: 34px;
+}
+
+.next-gathering {
+  margin: 0 0 34px;
+}
+
+.menu-link {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  margin: 0 0 10px;
+  color: #CC6536;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 17px;
+  color: #CC6536;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+}
+
+.details-link {
+  color: #CC6536;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.main-nav > a:nth-last-child(2) {
+  margin-bottom: 28px;
+}
+
+footer {
+  padding-top: 58px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* About page */
+
+.about-page {
+  width: min(680px, 100%);
+  padding: 78px 40px 64px;
+  text-align: left;
+}
+
+.about-header {
+  margin-bottom: 72px;
+}
+
+.about-title {
+  margin: 0;
+  color: #222;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.language-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #888;
+  font: inherit;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.language-button:hover {
+  opacity: 0.55;
+}
+
+.language-button.is-active {
+  color: #CC6536;
+}
+
+.language-content {
+  max-width: 580px;
+  margin: 0;
+}
+
+.word-notes {
+  margin-bottom: 62px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.word-notes p {
+  margin: 0 0 5px;
+}
+
+.word-notes span {
+  color: #222;
+  font-weight: 600;
+}
+
+.tagline {
+  margin: 0 0 68px;
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.tagline span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.about-copy,
+.venue-section {
+  font-size: 17px;
+  line-height: 2.15;
+  letter-spacing: 0.012em;
+}
+
+.about-copy p,
+.venue-section p {
+  margin: 0 0 2.15em;
+}
+
+.fields {
+  color: #444;
+}
+
+.accent-text {
+  color: #CC6536;
+}
+
+.venue-section {
+  margin-top: 126px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.venue-section h2 {
+  margin: 0 0 34px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+.back-link {
+  display: block;
+  width: fit-content;
+  margin: 104px 0 0;
+  color: #222;
+  font-size: 13px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 4.5vh;
+  }
+
+  .logo {
+    margin-bottom: 34px;
+  }
+
+  .logo img {
+    width: 280px;
+  }
+
+  .main-nav > a:first-child {
+    margin-bottom: 31px;
+  }
+
+  .menu-link {
+    margin-bottom: 17px;
+  }
+
+  .next-gathering {
+    margin-bottom: 32px;
+  }
+
+  footer {
+    padding-top: 52px;
+  }
+
+  .about-page {
+    padding: 52px 24px 48px;
+  }
+
+  .about-header {
+    margin-bottom: 58px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .language-switcher {
+    margin-top: 17px;
+    font-size: 10px;
+  }
+
+  .language-content {
+    max-width: 100%;
+  }
+
+  .word-notes {
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .tagline {
+    margin-bottom: 56px;
+    font-size: 25px;
+  }
+
+  .tagline span {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .about-copy,
+  .venue-section {
+    font-size: 16px;
+    line-height: 2.08;
+  }
+
+  .about-copy p,
+  .venue-section p {
+    margin-bottom: 2em;
+  }
+
+  .venue-section {
+    margin-top: 100px;
+  }
+
+  .venue-section h2 {
+    margin-bottom: 29px;
+    font-size: 13px;
+  }
+
+  .back-link {
+    margin-top: 84px;
+  }
+}
+
+/* About page refinements — v3 */
+.about-page {
+  width: min(680px, 100%);
+  padding-top: 82px;
+}
+
+.about-header {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.language-switcher {
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.about-logo {
+  margin: 76px auto 88px;
+  text-align: center;
+}
+
+.about-logo img {
+  display: block;
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.language-content {
+  margin: 0 auto;
+}
+
+.word-notes {
+  margin-bottom: 78px;
+  text-align: center;
+}
+
+.tagline {
+  margin-bottom: 76px;
+  color: #CC6536;
+  text-align: center;
+}
+
+.tagline span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.venue-section h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding-top: 58px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-logo {
+    margin-top: 62px;
+    margin-bottom: 72px;
+  }
+
+  .about-logo img {
+    width: 420px;
+  }
+
+  .word-notes {
+    margin-bottom: 64px;
+  }
+
+  .tagline {
+    margin-bottom: 62px;
+  }
+
+  .tagline span {
+    font-size: 12px;
+  }
+}
+
+/* Final spacing refinements */
+.about-title {
+  font-size: 24px;
+}
+
+.about-logo {
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+
+html[lang="ja"] .about-logo {
+  margin-bottom: 52px;
+}
+
+.tagline {
+  margin-bottom: 58px;
+}
+
+.venue-section {
+  margin-top: 92px;
+}
+
+.venue-section h2 {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-logo {
+    margin-top: 32px;
+    margin-bottom: 38px;
+  }
+
+  html[lang="ja"] .about-logo {
+    margin-bottom: 44px;
+  }
+
+  .tagline {
+    margin-bottom: 48px;
+  }
+
+  .venue-section {
+    margin-top: 76px;
+  }
+
+  .venue-section h2 {
+    margin-bottom: 26px;
+    font-size: 15px;
+  }
+}
+
+/* Confirmed spacing fix — v4 */
+.about-title {
+  font-size: 20px;
+}
+
+.about-logo {
+  margin-top: 36px !important;
+  margin-bottom: 52px !important;
+}
+
+html[lang="ja"] .about-logo {
+  margin-bottom: 62px !important;
+}
+
+.tagline {
+  margin-bottom: 52px;
+}
+
+.venue-section {
+  margin-top: 76px;
+}
+
+.venue-section h2 {
+  margin-bottom: 28px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 19px;
+  }
+
+  .about-logo {
+    margin-top: 18px !important;
+    margin-bottom: 28px !important;
+  }
+
+  html[lang="ja"] .about-logo {
+    margin-bottom: 36px !important;
+  }
+
+  .tagline {
+    margin-bottom: 44px;
+  }
+
+  .venue-section {
+    margin-top: 64px;
+  }
+
+  .venue-section h2 {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+}
+
+/* Next Gathering / Details page — v8 */
+.details-page {
+  width: min(760px, 100%);
+  padding: 66px 32px 64px;
+  text-align: center;
+}
+
+.details-header {
+  margin-bottom: 44px;
+}
+
+.details-kicker {
+  margin: 0 0 15px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.details-title {
+  margin: 0;
+  color: #CC6536;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.25;
+}
+
+.flyer-link {
+  display: block;
+  width: min(660px, 100%);
+  margin: 0 auto;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.flyer-link:hover {
+  opacity: 0.9;
+}
+
+.event-flyer {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.event-information {
+  width: min(560px, 100%);
+  margin: 74px auto 0;
+  text-align: left;
+}
+
+.event-information h2 {
+  margin: 0 0 40px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.event-list {
+  margin: 0;
+}
+
+.event-list > div {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  column-gap: 28px;
+  padding: 21px 0;
+  border-top: 1px solid #ddd;
+}
+
+.event-list > div:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.event-list dt,
+.event-list dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.event-list dt {
+  font-weight: 500;
+}
+
+.event-list dd {
+  font-weight: 300;
+}
+
+.event-list dd span {
+  color: #666;
+  font-size: 13px;
+}
+
+.details-back-link {
+  margin: 76px auto 0;
+}
+
+@media (max-width: 600px) {
+  .details-page {
+    padding: 48px 20px 48px;
+  }
+
+  .details-header {
+    margin-bottom: 32px;
+  }
+
+  .details-title {
+    font-size: 20px;
+  }
+
+  .event-information {
+    margin-top: 56px;
+  }
+
+  .event-information h2 {
+    margin-bottom: 28px;
+  }
+
+  .event-list > div {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .event-list dt {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .event-list dd {
+    font-size: 15px;
+  }
+
+  .details-back-link {
+    margin-top: 60px;
+  }
+}
+
+
+/* v10: event title block on the Next Gathering page */
+.details-event-heading {
+  margin-top: 18px;
+  text-align: center;
+  color: #cc6536;
+}
+
+.details-event-heading p {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.details-event-heading .details-event-series {
+  color: #111;
+}
+
+@media (max-width: 640px) {
+  .details-event-heading {
+    margin-top: 14px;
+  }
+
+  .details-event-heading p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
+
+/* Next Gathering text refinements — v11 */
+.details-event-series,
+.details-event-date {
+  font-size: 13px;
+}
+
+.event-copy {
+  width: min(620px, 100%);
+  margin: 70px auto 0;
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.015em;
+  text-align: left;
+}
+
+.event-copy p {
+  margin: 0 0 2em;
+}
+
+.event-summary {
+  margin-bottom: 68px;
+}
+
+.event-summary a {
+  color: #CC6536;
+  text-underline-offset: 0.18em;
+  transition: opacity 0.2s ease;
+}
+
+.event-summary a:hover {
+  opacity: 0.55;
+}
+
+.event-description {
+  margin-bottom: 82px;
+}
+
+.profiles h2 {
+  margin: 0 0 46px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.profile + .profile {
+  margin-top: 66px;
+}
+
+.profile h3 {
+  margin: 0 0 14px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.profile p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .details-event-series,
+  .details-event-date {
+    font-size: 12px;
+  }
+
+  .event-copy {
+    margin-top: 54px;
+    font-size: 14px;
+    line-height: 1.95;
+  }
+
+  .event-summary {
+    margin-bottom: 54px;
+  }
+
+  .event-description {
+    margin-bottom: 66px;
+  }
+
+  .profiles h2 {
+    margin-bottom: 36px;
+    font-size: 16px;
+  }
+
+  .profile + .profile {
+    margin-top: 52px;
+  }
+
+  .profile h3 {
+    font-size: 15px;
+  }
+}
+
+
+/* Next Gathering refinements — v12 */
+.details-event-heading .details-event-series,
+.details-event-heading .details-event-date {
+  font-size: clamp(12px, 1.45vw, 15px);
+  line-height: 1.5;
+}
+
+.event-copy {
+  width: min(620px, 100%);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.event-information {
+  width: 100%;
+  margin-top: 66px;
+}
+
+.event-list > div {
+  grid-template-columns: 110px 1fr;
+  column-gap: 30px;
+  padding: 18px 0;
+  border-top: 1px solid #cfcfcf;
+}
+
+.event-list > div:last-child {
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.event-list dt,
+.event-list dd {
+  font-weight: 500;
+}
+
+.event-list dt {
+  color: #222;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.event-list dd {
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.event-list dd span {
+  color: #555;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.event-list a {
+  color: #CC6536;
+  text-decoration: none;
+}
+
+.event-description {
+  margin-top: 72px;
+  font-size: 16px;
+  line-height: 2.05;
+}
+
+.event-description p {
+  margin: 0 0 2em;
+}
+
+.profiles {
+  margin-top: 82px;
+}
+
+.profiles h2 {
+  margin: 0 0 42px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile + .profile {
+  margin-top: 54px;
+}
+
+.profile h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .details-event-heading .details-event-series,
+  .details-event-heading .details-event-date {
+    font-size: 12px;
+  }
+
+  .event-information {
+    margin-top: 52px;
+  }
+
+  .event-list > div {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    column-gap: 18px;
+    padding: 16px 0;
+  }
+
+  .event-list dt {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .event-list dd {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .event-description {
+    margin-top: 58px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .profiles {
+    margin-top: 68px;
+  }
+}
+
+
+/* Next Gathering refinements — v13 */
+.details-event-heading .details-event-date {
+  color: #111;
+}
+
+/* Next Gathering refinements — v15 */
+.details-event-heading .details-event-series {
+  margin-bottom: 1.5em;
+}
+
+/* Shared hierarchy headers — v17
+   Match the confirmed About heading across all three pages. */
+.page-section-title {
+  margin: 0;
+  color: #222;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* Keep the hierarchy title consistent across About / Next Gathering / Archive. */
+.details-kicker {
+  margin: 0 0 52px;
+}
+
+.archive-page {
+  width: min(680px, 100%);
+  padding: 78px 40px 64px;
+  text-align: left;
+}
+
+.archive-header {
+  margin-bottom: 72px;
+}
+
+.archive-section {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 22px;
+}
+
+.archive-year {
+  margin: 0 0 28px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-item {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 0 22px;
+}
+
+.archive-item a {
+  color: #222;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.archive-item a:hover {
+  opacity: 0.45;
+}
+
+.archive-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.archive-date {
+  display: block;
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .page-section-title {
+    font-size: 19px;
+  }
+
+  .archive-page {
+    padding: 52px 24px 48px;
+  }
+
+  .archive-header {
+    margin-bottom: 54px;
+  }
+
+  .details-kicker {
+    margin-bottom: 42px;
+  }
+}
+
+
+/* Event overview refinements — v21 */
+.event-description-title {
+  margin: 0 0 3em;
+  color: #222;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: center;
+}
+
+.event-description-quote {
+  margin: 0 0 2.2em;
+}
+
+.event-description-quote p {
+  margin-bottom: 0.7em;
+}
+.event-description-quote p:last-child {
+  text-align:right;
+}
+
+.event-description-signature {
+  margin-top: 3em !important;
+  text-align: right;
+}
+
+
+.event-description-title{font-weight:600;}
+.event-description-quote p:first-child{font-style:italic;}
+
+</style>
 </head>
 
 <body>
@@ -81,5 +1160,34 @@
 
     <a class="back-link" href="index.html">← Home</a>
   </main>
+<script>
+(() => {
+  const buttons = document.querySelectorAll('.language-button');
+  const contents = document.querySelectorAll('.language-content');
+
+  if (!buttons.length || !contents.length) return;
+
+  const showLanguage = (language) => {
+    buttons.forEach((button) => {
+      const isActive = button.dataset.language === language;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+
+    contents.forEach((content) => {
+      const isActive = content.id === `content-${language}`;
+      content.classList.toggle('is-active', isActive);
+      content.hidden = !isActive;
+    });
+
+    document.documentElement.lang = language;
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => showLanguage(button.dataset.language));
+  });
+})();
+
+</script>
 </body>
 </html>
