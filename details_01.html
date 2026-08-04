@@ -1,1196 +1,198 @@
 <!DOCTYPE html>
-
 <html lang="ja">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Deep Looking Session — Moonstruck Cultivation</title>
-<meta content="2026年8月22日に野口晴哉記念音楽室で開催する、Moonstruck Cultivation vol.1『DEEP LOOKING Session』のご案内。" name="description"/>
-<link href="favicon.png" rel="icon" type="image/png"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
-<style>
-html {
-  background: #fff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  color: #222;
-  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
-  text-align: center;
-}
-
-main {
-  width: min(760px, 100%);
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 3.5vh 20px 24px;
-}
-
-.logo {
-  display: inline-block;
-  margin-bottom: 36px;
-}
-
-.logo img {
-  display: block;
-  width: 336px;
-  max-width: 82vw;
-  height: auto;
-}
-
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-nav > a,
-.menu-link {
-  margin: 0;
-  color: #222;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.main-nav > a:hover,
-.menu-link:hover,
-.details-link:hover,
-.back-link:hover {
-  opacity: 0.45;
-}
-
-.main-nav > a:first-child {
-  margin-bottom: 34px;
-}
-
-.next-gathering {
-  margin: 0 0 34px;
-}
-
-.menu-link {
-  display: inline-block;
-  margin-bottom: 18px;
-}
-
-.event-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.date {
-  margin: 0 0 10px;
-  color: #CC6536;
-  font-size: 16px;
-  line-height: 1.2;
-}
-
-h1 {
-  margin: 0 0 17px;
-  color: #CC6536;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 1.25;
-}
-
-.details-link {
-  color: #CC6536;
-  font-size: 14px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.main-nav > a:nth-last-child(2) {
-  margin-bottom: 28px;
-}
-
-footer {
-  padding-top: 58px;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-/* About page */
-
-.about-page {
-  width: min(680px, 100%);
-  padding: 78px 40px 64px;
-  text-align: left;
-}
-
-.about-header {
-  margin-bottom: 72px;
-}
-
-.about-title {
-  margin: 0;
-  color: #222;
-  font-size: 42px;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  text-align: left;
-}
-
-.language-switcher {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 4px;
-  margin-top: 20px;
-  color: #aaa;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  line-height: 1;
-}
-
-.language-button {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: #888;
-  font: inherit;
-  font-weight: 300;
-  cursor: pointer;
-  transition: color 0.2s, opacity 0.2s;
-}
-
-.language-button:hover {
-  opacity: 0.55;
-}
-
-.language-button.is-active {
-  color: #CC6536;
-}
-
-.language-content {
-  max-width: 580px;
-  margin: 0;
-}
-
-.word-notes {
-  margin-bottom: 62px;
-  color: #666;
-  font-size: 13px;
-  line-height: 1.35;
-}
-
-.word-notes p {
-  margin: 0 0 5px;
-}
-
-.word-notes span {
-  color: #222;
-  font-weight: 600;
-}
-
-.tagline {
-  margin: 0 0 68px;
-  color: #222;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.35;
-  text-align: left;
-}
-
-.tagline span {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-}
-
-.about-copy,
-.venue-section {
-  font-size: 17px;
-  line-height: 2.15;
-  letter-spacing: 0.012em;
-}
-
-.about-copy p,
-.venue-section p {
-  margin: 0 0 2.15em;
-}
-
-.fields {
-  color: #444;
-}
-
-.accent-text {
-  color: #CC6536;
-}
-
-.venue-section {
-  margin-top: 126px;
-  padding-top: 0;
-  border-top: 0;
-}
-
-.venue-section h2 {
-  margin: 0 0 34px;
-  color: #222;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
-}
-
-.back-link {
-  display: block;
-  width: fit-content;
-  margin: 104px 0 0;
-  color: #222;
-  font-size: 13px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-@media (max-width: 600px) {
-  main {
-    padding-top: 4.5vh;
-  }
-
-  .logo {
-    margin-bottom: 34px;
-  }
-
-  .logo img {
-    width: 280px;
-  }
-
-  .main-nav > a:first-child {
-    margin-bottom: 31px;
-  }
-
-  .menu-link {
-    margin-bottom: 17px;
-  }
-
-  .next-gathering {
-    margin-bottom: 32px;
-  }
-
-  footer {
-    padding-top: 52px;
-  }
-
-  .about-page {
-    padding: 52px 24px 48px;
-  }
-
-  .about-header {
-    margin-bottom: 58px;
-  }
-
-  .about-title {
-    font-size: 34px;
-  }
-
-  .language-switcher {
-    margin-top: 17px;
-    font-size: 10px;
-  }
-
-  .language-content {
-    max-width: 100%;
-  }
-
-  .word-notes {
-    margin-bottom: 50px;
-    font-size: 12px;
-    line-height: 1.35;
-  }
-
-  .tagline {
-    margin-bottom: 56px;
-    font-size: 25px;
-  }
-
-  .tagline span {
-    margin-top: 8px;
-    font-size: 14px;
-  }
-
-  .about-copy,
-  .venue-section {
-    font-size: 16px;
-    line-height: 2.08;
-  }
-
-  .about-copy p,
-  .venue-section p {
-    margin-bottom: 2em;
-  }
-
-  .venue-section {
-    margin-top: 100px;
-  }
-
-  .venue-section h2 {
-    margin-bottom: 29px;
-    font-size: 13px;
-  }
-
-  .back-link {
-    margin-top: 84px;
-  }
-}
-
-/* About page refinements — v3 */
-.about-page {
-  width: min(680px, 100%);
-  padding-top: 82px;
-}
-
-.about-header {
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.about-title {
-  font-size: 32px;
-  text-align: center;
-}
-
-.language-switcher {
-  justify-content: center;
-  margin-top: 18px;
-}
-
-.about-logo {
-  margin: 76px auto 88px;
-  text-align: center;
-}
-
-.about-logo img {
-  display: block;
-  width: 500px;
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.language-content {
-  margin: 0 auto;
-}
-
-.word-notes {
-  margin-bottom: 78px;
-  text-align: center;
-}
-
-.tagline {
-  margin-bottom: 76px;
-  color: #CC6536;
-  text-align: center;
-}
-
-.tagline span {
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.venue-section h2 {
-  font-weight: 600;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .about-page {
-    padding-top: 58px;
-  }
-
-  .about-title {
-    font-size: 28px;
-  }
-
-  .about-logo {
-    margin-top: 62px;
-    margin-bottom: 72px;
-  }
-
-  .about-logo img {
-    width: 420px;
-  }
-
-  .word-notes {
-    margin-bottom: 64px;
-  }
-
-  .tagline {
-    margin-bottom: 62px;
-  }
-
-  .tagline span {
-    font-size: 12px;
-  }
-}
-
-/* Final spacing refinements */
-.about-title {
-  font-size: 24px;
-}
-
-.about-logo {
-  margin-top: 38px;
-  margin-bottom: 44px;
-}
-
-html[lang="ja"] .about-logo {
-  margin-bottom: 52px;
-}
-
-.tagline {
-  margin-bottom: 58px;
-}
-
-.venue-section {
-  margin-top: 92px;
-}
-
-.venue-section h2 {
-  margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .about-title {
-    font-size: 22px;
-  }
-
-  .about-logo {
-    margin-top: 32px;
-    margin-bottom: 38px;
-  }
-
-  html[lang="ja"] .about-logo {
-    margin-bottom: 44px;
-  }
-
-  .tagline {
-    margin-bottom: 48px;
-  }
-
-  .venue-section {
-    margin-top: 76px;
-  }
-
-  .venue-section h2 {
-    margin-bottom: 26px;
-    font-size: 15px;
-  }
-}
-
-/* Confirmed spacing fix — v4 */
-.about-title {
-  font-size: 20px;
-}
-
-.about-logo {
-  margin-top: 36px !important;
-  margin-bottom: 52px !important;
-}
-
-html[lang="ja"] .about-logo {
-  margin-bottom: 62px !important;
-}
-
-.tagline {
-  margin-bottom: 52px;
-}
-
-.venue-section {
-  margin-top: 76px;
-}
-
-.venue-section h2 {
-  margin-bottom: 28px;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .about-title {
-    font-size: 19px;
-  }
-
-  .about-logo {
-    margin-top: 18px !important;
-    margin-bottom: 28px !important;
-  }
-
-  html[lang="ja"] .about-logo {
-    margin-bottom: 36px !important;
-  }
-
-  .tagline {
-    margin-bottom: 44px;
-  }
-
-  .venue-section {
-    margin-top: 64px;
-  }
-
-  .venue-section h2 {
-    margin-bottom: 24px;
-    font-size: 16px;
-  }
-}
-
-/* Next Gathering / Details page — v8 */
-.details-page {
-  width: min(760px, 100%);
-  padding: 66px 32px 64px;
-  text-align: center;
-}
-
-.details-header {
-  margin-bottom: 44px;
-}
-
-.details-kicker {
-  margin: 0 0 15px;
-  color: #222;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.details-title {
-  margin: 0;
-  color: #CC6536;
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0.075em;
-  line-height: 1.25;
-}
-
-.flyer-link {
-  display: block;
-  width: min(660px, 100%);
-  margin: 0 auto;
-  line-height: 0;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.flyer-link:hover {
-  opacity: 0.9;
-}
-
-.event-flyer {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.event-information {
-  width: min(560px, 100%);
-  margin: 74px auto 0;
-  text-align: left;
-}
-
-.event-information h2 {
-  margin: 0 0 40px;
-  color: #222;
-  font-size: 17px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.event-list {
-  margin: 0;
-}
-
-.event-list > div {
-  display: grid;
-  grid-template-columns: 132px 1fr;
-  column-gap: 28px;
-  padding: 21px 0;
-  border-top: 1px solid #ddd;
-}
-
-.event-list > div:last-child {
-  border-bottom: 1px solid #ddd;
-}
-
-.event-list dt,
-.event-list dd {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.75;
-}
-
-.event-list dt {
-  font-weight: 500;
-}
-
-.event-list dd {
-  font-weight: 300;
-}
-
-.event-list dd span {
-  color: #666;
-  font-size: 13px;
-}
-
-.details-back-link {
-  margin: 76px auto 0;
-}
-
-@media (max-width: 600px) {
-  .details-page {
-    padding: 48px 20px 48px;
-  }
-
-  .details-header {
-    margin-bottom: 32px;
-  }
-
-  .details-title {
-    font-size: 20px;
-  }
-
-  .event-information {
-    margin-top: 56px;
-  }
-
-  .event-information h2 {
-    margin-bottom: 28px;
-  }
-
-  .event-list > div {
-    display: block;
-    padding: 18px 0;
-  }
-
-  .event-list dt {
-    margin-bottom: 5px;
-    font-size: 13px;
-  }
-
-  .event-list dd {
-    font-size: 15px;
-  }
-
-  .details-back-link {
-    margin-top: 60px;
-  }
-}
-
-
-/* v10: event title block on the Next Gathering page */
-.details-event-heading {
-  margin-top: 18px;
-  text-align: center;
-  color: #cc6536;
-}
-
-.details-event-heading p {
-  margin: 0;
-  font-size: clamp(16px, 2vw, 22px);
-  line-height: 1.55;
-  font-weight: 400;
-}
-
-.details-event-heading .details-event-series {
-  color: #111;
-}
-
-@media (max-width: 640px) {
-  .details-event-heading {
-    margin-top: 14px;
-  }
-
-  .details-event-heading p {
-    font-size: 15px;
-    line-height: 1.55;
-  }
-}
-
-/* Next Gathering text refinements — v11 */
-.details-event-series,
-.details-event-date {
-  font-size: 13px;
-}
-
-.event-copy {
-  width: min(620px, 100%);
-  margin: 70px auto 0;
-  color: #222;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 2;
-  letter-spacing: 0.015em;
-  text-align: left;
-}
-
-.event-copy p {
-  margin: 0 0 2em;
-}
-
-.event-summary {
-  margin-bottom: 68px;
-}
-
-.event-summary a {
-  color: #CC6536;
-  text-underline-offset: 0.18em;
-  transition: opacity 0.2s ease;
-}
-
-.event-summary a:hover {
-  opacity: 0.55;
-}
-
-.event-description {
-  margin-bottom: 82px;
-}
-
-.profiles h2 {
-  margin: 0 0 46px;
-  color: #222;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.profile + .profile {
-  margin-top: 66px;
-}
-
-.profile h3 {
-  margin: 0 0 14px;
-  color: #222;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.profile p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 600px) {
-  .details-event-series,
-  .details-event-date {
-    font-size: 12px;
-  }
-
-  .event-copy {
-    margin-top: 54px;
-    font-size: 14px;
-    line-height: 1.95;
-  }
-
-  .event-summary {
-    margin-bottom: 54px;
-  }
-
-  .event-description {
-    margin-bottom: 66px;
-  }
-
-  .profiles h2 {
-    margin-bottom: 36px;
-    font-size: 16px;
-  }
-
-  .profile + .profile {
-    margin-top: 52px;
-  }
-
-  .profile h3 {
-    font-size: 15px;
-  }
-}
-
-
-/* Next Gathering refinements — v12 */
-.details-event-heading .details-event-series,
-.details-event-heading .details-event-date {
-  font-size: clamp(12px, 1.45vw, 15px);
-  line-height: 1.5;
-}
-
-.event-copy {
-  width: min(620px, 100%);
-  margin: 0 auto;
-  text-align: left;
-}
-
-.event-information {
-  width: 100%;
-  margin-top: 66px;
-}
-
-.event-list > div {
-  grid-template-columns: 110px 1fr;
-  column-gap: 30px;
-  padding: 18px 0;
-  border-top: 1px solid #cfcfcf;
-}
-
-.event-list > div:last-child {
-  border-bottom: 1px solid #cfcfcf;
-}
-
-.event-list dt,
-.event-list dd {
-  font-weight: 500;
-}
-
-.event-list dt {
-  color: #222;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-}
-
-.event-list dd {
-  font-size: 15px;
-  line-height: 1.72;
-}
-
-.event-list dd span {
-  color: #555;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.event-list a {
-  color: #CC6536;
-  text-decoration: none;
-}
-
-.event-description {
-  margin-top: 72px;
-  font-size: 16px;
-  line-height: 2.05;
-}
-
-.event-description p {
-  margin: 0 0 2em;
-}
-
-.profiles {
-  margin-top: 82px;
-}
-
-.profiles h2 {
-  margin: 0 0 42px;
-  font-size: 17px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.profile + .profile {
-  margin-top: 54px;
-}
-
-.profile h3 {
-  margin: 0 0 12px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.profile p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 2;
-}
-
-@media (max-width: 600px) {
-  .details-event-heading .details-event-series,
-  .details-event-heading .details-event-date {
-    font-size: 12px;
-  }
-
-  .event-information {
-    margin-top: 52px;
-  }
-
-  .event-list > div {
-    display: grid;
-    grid-template-columns: 76px 1fr;
-    column-gap: 18px;
-    padding: 16px 0;
-  }
-
-  .event-list dt {
-    margin: 0;
-    font-size: 12px;
-  }
-
-  .event-list dd {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .event-description {
-    margin-top: 58px;
-    font-size: 15px;
-    line-height: 2;
-  }
-
-  .profiles {
-    margin-top: 68px;
-  }
-}
-
-
-/* Next Gathering refinements — v13 */
-.details-event-heading .details-event-date {
-  color: #111;
-}
-
-/* Next Gathering refinements — v15 */
-.details-event-heading .details-event-series {
-  margin-bottom: 1.5em;
-}
-
-/* Shared hierarchy headers — v17
-   Match the confirmed About heading across all three pages. */
-.page-section-title {
-  margin: 0;
-  color: #222;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  text-align: center;
-}
-
-/* Keep the hierarchy title consistent across About / Next Gathering / Archive. */
-.details-kicker {
-  margin: 0 0 52px;
-}
-
-.archive-page {
-  width: min(680px, 100%);
-  padding: 78px 40px 64px;
-  text-align: left;
-}
-
-.archive-header {
-  margin-bottom: 72px;
-}
-
-.archive-section {
-  border-top: 1px solid #d8d8d8;
-  padding-top: 22px;
-}
-
-.archive-year {
-  margin: 0 0 28px;
-  color: #222;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
-.archive-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.archive-item {
-  border-bottom: 1px solid #d8d8d8;
-  padding: 0 0 22px;
-}
-
-.archive-item a {
-  color: #222;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.archive-item a:hover {
-  opacity: 0.45;
-}
-
-.archive-title {
-  display: block;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
-}
-
-.archive-date {
-  display: block;
-  margin-top: 7px;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .page-section-title {
-    font-size: 19px;
-  }
-
-  .archive-page {
-    padding: 52px 24px 48px;
-  }
-
-  .archive-header {
-    margin-bottom: 54px;
-  }
-
-  .details-kicker {
-    margin-bottom: 42px;
-  }
-}
-
-
-/* Event overview refinements — v21 */
-.event-description-title {
-  margin: 0 0 3em;
-  color: #222;
-  font-size: inherit;
-  font-weight: 500;
-  letter-spacing: inherit;
-  line-height: inherit;
-  text-align: center;
-}
-
-.event-description-quote {
-  margin: 0 0 2.2em;
-}
-
-.event-description-quote p {
-  margin-bottom: 0.7em;
-}
-.event-description-quote p:last-child {
-  text-align:right;
-}
-
-.event-description-signature {
-  margin-top: 3em !important;
-  text-align: right;
-}
-
-
-.event-description-title{font-weight:600;}
-.event-description-quote p:first-child{font-style:italic;}
-
-
-
-/* Links inside event text only */
-.event-copy a {
-  color: #CC6536;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-  transition: opacity 0.2s ease;
-}
-
-.event-copy a:hover {
-  opacity: 0.55;
-}
-
-.event-copy a:visited {
-  color: #CC6536;
-}
-
-</style>
-</head>
-<body>
-<main class="details-page">
-<header class="details-header">
-<h1 class="page-section-title details-kicker">Next Gathering</h1>
-<div aria-label="Moonstruck Cultivation vol.1, Deep Looking Session" class="details-event-heading">
-<p class="details-event-series">Moonstruck Cultivation vol.1</p>
-<p>DEEP LOOKING Session</p>
-<p lang="ja">想像力を取り戻す：「ディープ・ルッキング」アートクラブ</p>
-</div>
-</header>
-<a aria-label="フライヤーを原寸で開く" class="flyer-link" href="deep-looking-session.jpg">
-<img alt="Moonstruck Cultivation vol.1 DEEP LOOKING Session フライヤー" class="event-flyer" src="/img/deep-looking-session.jpg"/>
-</a>
-<section aria-label="イベント詳細" class="event-copy">
-<section aria-label="開催情報" class="event-information">
-<dl class="event-list">
-<div>
-<dt>ゲスト</dt>
-<dd>ロジャー・マクドナルド（キュレーター）<br/>ピーター・マクドナルド（アーティスト）</dd>
-</div>
-<div>
-<dt>ホスト</dt>
-<dd>井出幸亮（編集者）</dd>
-</div>
-<div>
-<dt>日時</dt>
-<dd>2026年8月22日（土）16:00～18:00<br/>
-<span>開場15:00<br/>終了後に自由参加の「アフターアワーズ茶会」あり</span></dd>
-</div>
-<div>
-<dt>会場</dt>
-<dd>野口晴哉記念音楽室（東京都狛江市）</dd>
-</div>
-<div>
-<dt>料金</dt>
-<dd>3,500円<br/><span>1ドリンクオーダー制（お菓子付き）</span></dd>
-</div>
-<div>
-<dt>定員</dt>
-<dd>30名</dd>
-</div>
-<div>
-<dt>予約</dt>
-<dd>完全予約制<br/>
-ご予約は「全生新舎」Instagramアカウント（<a href="https://www.instagram.com/zenseishinsha/" rel="noopener noreferrer" target="_blank">@zenseishinsha</a>）をフォローの上、のDMでご連絡ください。<br/><span>＊イベント当日、受付時に身分証明書（免許証、パスポート、マイナンバーカードなど）をご提示ください。</span></dd>
-</div>
-</dl>
-</section>
-<div class="event-description">
-<h2 class="event-description-title">時間を奪われ続けている私たちのためのレッスン。</h2>
-<div class="event-description-quote">
-<p>2001年にニューヨークのメトロポリタン美術館が発表したデータは、実に驚くべきものだった。美術館を訪れた鑑賞者がひとつの絵画作品にかける時間は、たったの27秒だというのだ。</p>
-<p>―――――『DEEP LOOKING』ロジャー・マクドナルド</p>
-</div>
-<p>この調査が行われたのは今から25年以上も前、スマホどころか携帯電話が普及したばかりのころだから、どうやらそれらが直接の“犯人”ではないようだが、とにかく美術館でアート作品を見ている僕たちは、作品を「ほとんど見ていない」らしい。</p>
-<p>ましてや、一日24時間いついかなるときも情報が怒涛の洪水のように目の前に流れ続ける現代においては、その日常の忙しなさは加速度的に増しており、「一秒でも速く」答えを出すことを求められている。数十秒の視聴に最適化されたショート動画。“タイパ”向上に寄与する倍速視聴……「さすがにそこまではね」と避けているつもりの自分ですら、生きている時間の多くで電子機器に注意を奪われ続けていることに変わりはない。</p>
-<p>そんな我々に、今こそ「ディープ・ルッキング（深い観察）」が必要だ、と語りかけるのが、『DEEP LOOKING 想像力を蘇らせる深い観察のガイド』（AIT Press）の著者である、ロジャー・マクドナルドさんだ。アート・キュレーターとして長年にわたりこの分野で独自に研究を行なってきた彼は、古代から現代までの東西のアーティストたちが模索してきた歴史をたどり、「深い観察がもたらす非日常的な意識状態」によって心身を解きほぐし、感覚を研ぎ澄ませてクリエイティビティを育むためのメソッドを改めて提唱する活動を行っている。</p>
-<p>「ムーンストラック・カルティベーション」の記念すべき第一回イベントである今回は、ロジャーさんと、彼の弟でありロンドンを拠点に活動するアーティストのピーター・マクドナルドさんのお二人を招いて行うことにした。「ディープ・ルッキング」の思想的背景や歴史について解説するトークとともに、参加者の方々にも実際に参加していただける、簡単な「ディープ・ルッキング実践セッション」も行います。といっても、気負う必要はぜんぜんありません。美術館での鑑賞よりも、少しだけ長い時間をかけてアートを「見て／待つ」だけ。今回は特別にピーターさんの「Moon（月）」にまつわる絵画作品を鑑賞したいと思います。</p>
-<p>アタマを開いてちょっと気軽になって楽しみながら、自身に潜む想像力を回復するレッスンを一緒にしてみましょう。</p>
-<p class="event-description-signature">井出幸亮（Moonstruck Cultivation）<br/><span style="font-size:13px; color:#666;">Flyer Design: 平岡花（Moonstruck Cultivation）</span></p>
-</div>
-<section aria-labelledby="profiles-title" class="profiles">
-<h2 id="profiles-title">登壇者プロフィール</h2>
-<article class="profile">
-<h3>ロジャー・マクドナルド</h3>
-<p>Roger McDonald／東京都生まれ。幼少期からイギリスで教育を受ける。大学では国際政治学を専攻し、カンタベリー・ケント大学大学院にて神秘宗教学（禅やサイケデリック文化研究）を専攻、博士課程では近代美術史と神秘主義を学ぶ。帰国後、インディペンデント・キュレーターとして活動し、様々な展覧会を企画・開催。2000年～2013年まで国内外の美術大学にて非常勤講師も行う。2010年長野県佐久市に移住後、2014年に<a href="https://www.fenbergerhouse.com/" rel="noopener noreferrer" target="_blank">『フェンバーガーハウス』</a>をオープン、館長を務める。2024年より「多津衛民芸館」（佐久市）館長も務める。NPO法人アーツイニシアティヴトウキョウ［AIT/エイト］設立メンバー。著書に『DEEP LOOKING 想像力を蘇らせる深い観察のガイド』。</p>
-
-</article>
-<article class="profile">
-<h3>ピーター・マクドナルド</h3>
-<p>Peter McDonald／東京都生まれ、ロンドン在住。2000年ロイヤル・アカデミー・スクールズ・ロンドン修士課程絵画科卒業。絵を描くということをパフォーマンス行為と捉え、パフォーマーを描く中、2002年、頭の大きな人物を描き始める。空港、学校、床屋、カフェという日常の一場面や、マティス、フォンタナなど歴史上の画家の創作風景などをテーマに、ポップで半抽象化された人物がカラフルに描かれる絵画作品を多数制作。2008年ジョン・ムーア絵画賞大賞受賞。主な個展に「言語のマッシュルーム」（ケイト・マッガリー画廊、イギリス、2017）、「訪問者／VISITOR」（金沢21世紀美術館、日本、2011-2012）。ミュージシャンBuffalo Daughterとの共同制作や、イタリアのデザイナー／アーティスト、マルティーノ・ガンパーとのコラボレーションで家具やインテリアデザインも手がける。</p>
-
-</article>
-<article class="profile">
-<h3>井出幸亮</h3>
-<p>いで・こうすけ／編集者。1975年生まれ。「Moonstruck Cultivation（ムーンストラック・カルティベーション）」スチュワード。雑誌『Subsequence』（cubism inc.）編集長、「POPEYE Web」（マガジンハウス）シニアエディターでもある。</p>
-
-</section>
-</section>
-<a class="back-link details-back-link" href="index.html">← Home</a>
-</main>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Deep Looking Session — Moonstruck Cultivation
+  </title>
+  <meta content="2026年8月22日に野口晴哉記念音楽室で開催する、Moonstruck Cultivation vol.1『DEEP LOOKING Session』のご案内。" name="description"/>
+  <link href="favicon.png" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <main class="details-page">
+   <header class="details-header">
+    <h1 class="page-section-title details-kicker">
+     Next Gathering
+    </h1>
+    <div aria-label="Moonstruck Cultivation vol.1, Deep Looking Session" class="details-event-heading">
+     <p class="details-event-series">
+      Moonstruck Cultivation vol.1
+     </p>
+     <p>
+      DEEP LOOKING Session
+     </p>
+     <p lang="ja">
+      想像力を取り戻す：「ディープ・ルッキング」アートクラブ
+     </p>
+    </div>
+   </header>
+   <a aria-label="フライヤーを原寸で開く" class="flyer-link" href="img/deep-looking-session.jpg">
+    <img alt="Moonstruck Cultivation vol.1 DEEP LOOKING Session フライヤー" class="event-flyer" src="/img/deep-looking-session.jpg"/>
+   </a>
+   <section aria-label="イベント詳細" class="event-copy">
+    <section aria-label="開催情報" class="event-information">
+     <dl class="event-list">
+      <div>
+       <dt>
+        ゲスト
+       </dt>
+       <dd>
+        ロジャー・マクドナルド（キュレーター）
+        <br/>
+        ピーター・マクドナルド（アーティスト）
+       </dd>
+      </div>
+      <div>
+       <dt>
+        ホスト
+       </dt>
+       <dd>
+        井出幸亮（編集者）
+       </dd>
+      </div>
+      <div>
+       <dt>
+        日時
+       </dt>
+       <dd>
+        2026年8月22日（土）16:00～18:00
+        <br/>
+        <span>
+         開場15:00
+         <br/>
+         終了後に自由参加の「アフターアワーズ茶会」あり
+        </span>
+       </dd>
+      </div>
+      <div>
+       <dt>
+        会場
+       </dt>
+       <dd>
+        野口晴哉記念音楽室（東京都狛江市）
+       </dd>
+      </div>
+      <div>
+       <dt>
+        料金
+       </dt>
+       <dd>
+        3,500円
+        <br/>
+        <span>
+         1ドリンクオーダー制（お菓子付き）
+        </span>
+       </dd>
+      </div>
+      <div>
+       <dt>
+        定員
+       </dt>
+       <dd>
+        30名
+       </dd>
+      </div>
+      <div>
+       <dt>
+        予約
+       </dt>
+       <dd>
+        完全予約制
+        <br/>
+        ご予約は「全生新舎」Instagramアカウント（
+        <a href="https://www.instagram.com/zenseishinsha/" rel="noopener noreferrer" target="_blank">
+         @zenseishinsha
+        </a>
+        ）をフォローの上、のDMでご連絡ください。
+        <br/>
+        <span>
+         ＊イベント当日、受付時に身分証明書（免許証、パスポート、マイナンバーカードなど）をご提示ください。
+         <br/>
+         <span class="soldout">
+          ＊SOLD OUT／こちらのイベントは満席になりました。
+         </span>
+        </span>
+       </dd>
+      </div>
+     </dl>
+    </section>
+    <div class="event-description">
+     <h2 class="event-description-title">
+      時間を奪われ続けている私たちのためのレッスン。
+     </h2>
+     <div class="event-description-quote">
+      <p>
+       2001年にニューヨークのメトロポリタン美術館が発表したデータは、実に驚くべきものだった。美術館を訪れた鑑賞者がひとつの絵画作品にかける時間は、たったの27秒だというのだ。
+      </p>
+      <p>
+       ―――――『DEEP LOOKING』ロジャー・マクドナルド
+      </p>
+     </div>
+     <p>
+      この調査が行われたのは今から25年以上も前、スマホどころか携帯電話が普及したばかりのころだから、どうやらそれらが直接の“犯人”ではないようだが、とにかく美術館でアート作品を見ている僕たちは、作品を「ほとんど見ていない」らしい。
+     </p>
+     <p>
+      ましてや、一日24時間いついかなるときも情報が怒涛の洪水のように目の前に流れ続ける現代においては、その日常の忙しなさは加速度的に増しており、「一秒でも速く」答えを出すことを求められている。数十秒の視聴に最適化されたショート動画。“タイパ”向上に寄与する倍速視聴……「さすがにそこまではね」と避けているつもりの自分ですら、生きている時間の多くで電子機器に注意を奪われ続けていることに変わりはない。
+     </p>
+     <p>
+      そんな我々に、今こそ「ディープ・ルッキング（深い観察）」が必要だ、と語りかけるのが、『DEEP LOOKING 想像力を蘇らせる深い観察のガイド』（AIT Press）の著者である、ロジャー・マクドナルドさんだ。アート・キュレーターとして長年にわたりこの分野で独自に研究を行なってきた彼は、古代から現代までの東西のアーティストたちが模索してきた歴史をたどり、「深い観察がもたらす非日常的な意識状態」によって心身を解きほぐし、感覚を研ぎ澄ませてクリエイティビティを育むためのメソッドを改めて提唱する活動を行っている。
+     </p>
+     <p>
+      「ムーンストラック・カルティベーション」の記念すべき第一回イベントである今回は、ロジャーさんと、彼の弟でありロンドンを拠点に活動するアーティストのピーター・マクドナルドさんのお二人を招いて行うことにした。「ディープ・ルッキング」の思想的背景や歴史について解説するトークとともに、参加者の方々にも実際に参加していただける、簡単な「ディープ・ルッキング実践セッション」も行います。といっても、気負う必要はぜんぜんありません。美術館での鑑賞よりも、少しだけ長い時間をかけてアートを「見て／待つ」だけ。今回は特別にピーターさんの「Moon（月）」にまつわる絵画作品を鑑賞したいと思います。
+     </p>
+     <p>
+      アタマを開いてちょっと気軽になって楽しみながら、自身に潜む想像力を回復するレッスンを一緒にしてみましょう。
+     </p>
+     <p class="event-description-signature">
+      井出幸亮（Moonstruck Cultivation）
+      <br/>
+      <span style="font-size:13px; color:#666;">
+       Flyer Design: 平岡花（Moonstruck Cultivation）
+      </span>
+     </p>
+    </div>
+    <section aria-labelledby="profiles-title" class="profiles">
+     <h2 id="profiles-title">
+      登壇者プロフィール
+     </h2>
+     <article class="profile">
+      <h3>
+       ロジャー・マクドナルド
+      </h3>
+      <p>
+       Roger McDonald／東京都生まれ。幼少期からイギリスで教育を受ける。大学では国際政治学を専攻し、カンタベリー・ケント大学大学院にて神秘宗教学（禅やサイケデリック文化研究）を専攻、博士課程では近代美術史と神秘主義を学ぶ。帰国後、インディペンデント・キュレーターとして活動し、様々な展覧会を企画・開催。2000年～2013年まで国内外の美術大学にて非常勤講師も行う。2010年長野県佐久市に移住後、2014年に
+       <a href="https://www.fenbergerhouse.com/" rel="noopener noreferrer" target="_blank">
+        『フェンバーガーハウス』
+       </a>
+       をオープン、館長を務める。2024年より「多津衛民芸館」（佐久市）館長も務める。NPO法人アーツイニシアティヴトウキョウ［AIT/エイト］設立メンバー。著書に『DEEP LOOKING 想像力を蘇らせる深い観察のガイド』。
+      </p>
+     </article>
+     <article class="profile">
+      <h3>
+       ピーター・マクドナルド
+      </h3>
+      <p>
+       Peter McDonald／東京都生まれ、ロンドン在住。2000年ロイヤル・アカデミー・スクールズ・ロンドン修士課程絵画科卒業。絵を描くということをパフォーマンス行為と捉え、パフォーマーを描く中、2002年、頭の大きな人物を描き始める。空港、学校、床屋、カフェという日常の一場面や、マティス、フォンタナなど歴史上の画家の創作風景などをテーマに、ポップで半抽象化された人物がカラフルに描かれる絵画作品を多数制作。2008年ジョン・ムーア絵画賞大賞受賞。主な個展に「言語のマッシュルーム」（ケイト・マッガリー画廊、イギリス、2017）、「訪問者／VISITOR」（金沢21世紀美術館、日本、2011-2012）。ミュージシャンBuffalo Daughterとの共同制作や、イタリアのデザイナー／アーティスト、マルティーノ・ガンパーとのコラボレーションで家具やインテリアデザインも手がける。
+      </p>
+     </article>
+     <article class="profile">
+      <h3>
+       井出幸亮
+      </h3>
+      <p>
+       いで・こうすけ／編集者。1975年生まれ。「Moonstruck Cultivation（ムーンストラック・カルティベーション）」スチュワード。雑誌『Subsequence』（cubism inc.）編集長、「POPEYE Web」（マガジンハウス）シニアエディターでもある。
+      </p>
+     </article>
+    </section>
+   </section>
+   <a class="back-link details-back-link" href="index.html">
+    ← Home
+   </a>
+  </main>
+ </body>
 </html>

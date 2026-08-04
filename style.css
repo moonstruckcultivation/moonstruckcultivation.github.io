@@ -1,3 +1,11 @@
+/* Moonstruck Cultivation — shared site styles */
+:root {
+  --text: #222;
+  --muted: #666;
+  --accent: #CC6536;
+  --soldout: #d63333;
+}
+
 html {
   background: #fff;
 }
@@ -8,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  color: #222;
+  color: var(--text);
   font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -39,10 +47,9 @@ main {
   align-items: center;
 }
 
-.main-nav > a,
-.menu-link {
+.main-nav > a, .menu-link {
   margin: 0;
-  color: #222;
+  color: var(--text);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
@@ -50,10 +57,7 @@ main {
   transition: opacity 0.2s;
 }
 
-.main-nav > a:hover,
-.menu-link:hover,
-.details-link:hover,
-.back-link:hover {
+.main-nav > a:hover, .menu-link:hover, .details-link:hover, .back-link:hover {
   opacity: 0.45;
 }
 
@@ -78,14 +82,14 @@ main {
 
 .date {
   margin: 0 0 10px;
-  color: #CC6536;
+  color: var(--accent);
   font-size: 16px;
   line-height: 1.2;
 }
 
 h1 {
   margin: 0 0 17px;
-  color: #CC6536;
+  color: var(--accent);
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.08em;
@@ -93,7 +97,7 @@ h1 {
 }
 
 .details-link {
-  color: #CC6536;
+  color: var(--accent);
   font-size: 14px;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -107,40 +111,6 @@ footer {
   padding-top: 58px;
   font-size: 14px;
   line-height: 1.6;
-}
-
-/* About page */
-
-.about-page {
-  width: min(680px, 100%);
-  padding: 78px 40px 64px;
-  text-align: left;
-}
-
-.about-header {
-  margin-bottom: 72px;
-}
-
-.about-title {
-  margin: 0;
-  color: #222;
-  font-size: 42px;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  text-align: left;
-}
-
-.language-switcher {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 4px;
-  margin-top: 20px;
-  color: #aaa;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  line-height: 1;
 }
 
 .language-button {
@@ -159,19 +129,7 @@ footer {
 }
 
 .language-button.is-active {
-  color: #CC6536;
-}
-
-.language-content {
-  max-width: 580px;
-  margin: 0;
-}
-
-.word-notes {
-  margin-bottom: 62px;
-  color: #666;
-  font-size: 13px;
-  line-height: 1.35;
+  color: var(--accent);
 }
 
 .word-notes p {
@@ -179,37 +137,17 @@ footer {
 }
 
 .word-notes span {
-  color: #222;
+  color: var(--text);
   font-weight: 600;
 }
 
-.tagline {
-  margin: 0 0 68px;
-  color: #222;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.35;
-  text-align: left;
-}
-
-.tagline span {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-}
-
-.about-copy,
-.venue-section {
+.about-copy, .venue-section {
   font-size: 17px;
   line-height: 2.15;
   letter-spacing: 0.012em;
 }
 
-.about-copy p,
-.venue-section p {
+.about-copy p, .venue-section p {
   margin: 0 0 2.15em;
 }
 
@@ -218,29 +156,14 @@ footer {
 }
 
 .accent-text {
-  color: #CC6536;
-}
-
-.venue-section {
-  margin-top: 126px;
-  padding-top: 0;
-  border-top: 0;
-}
-
-.venue-section h2 {
-  margin: 0 0 34px;
-  color: #222;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
+  color: var(--accent);
 }
 
 .back-link {
   display: block;
   width: fit-content;
   margin: 104px 0 0;
-  color: #222;
+  color: var(--text);
   font-size: 13px;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -312,14 +235,12 @@ footer {
     font-size: 14px;
   }
 
-  .about-copy,
-  .venue-section {
+  .about-copy, .venue-section {
     font-size: 16px;
     line-height: 2.08;
   }
 
-  .about-copy p,
-  .venue-section p {
+  .about-copy p, .venue-section p {
     margin-bottom: 2em;
   }
 
@@ -335,10 +256,12 @@ footer {
   .back-link {
     margin-top: 84px;
   }
+
 }
 
-/* About page refinements — v3 */
 .about-page {
+  padding: 78px 40px 64px;
+  text-align: left;
   width: min(680px, 100%);
   padding-top: 82px;
 }
@@ -348,19 +271,16 @@ footer {
   text-align: center;
 }
 
-.about-title {
-  font-size: 32px;
-  text-align: center;
-}
-
 .language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 1;
   justify-content: center;
   margin-top: 18px;
-}
-
-.about-logo {
-  margin: 76px auto 88px;
-  text-align: center;
 }
 
 .about-logo img {
@@ -372,28 +292,24 @@ footer {
 }
 
 .language-content {
+  max-width: 580px;
   margin: 0 auto;
 }
 
 .word-notes {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
   margin-bottom: 78px;
   text-align: center;
 }
 
-.tagline {
-  margin-bottom: 76px;
-  color: #CC6536;
-  text-align: center;
-}
-
 .tagline span {
+  display: inline-block;
+  margin-top: 10px;
+  letter-spacing: 0.01em;
   font-size: 13px;
   font-weight: 400;
-}
-
-.venue-section h2 {
-  font-weight: 600;
-  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -425,34 +341,7 @@ footer {
   .tagline span {
     font-size: 12px;
   }
-}
 
-/* Final spacing refinements */
-.about-title {
-  font-size: 24px;
-}
-
-.about-logo {
-  margin-top: 38px;
-  margin-bottom: 44px;
-}
-
-html[lang="ja"] .about-logo {
-  margin-bottom: 52px;
-}
-
-.tagline {
-  margin-bottom: 58px;
-}
-
-.venue-section {
-  margin-top: 92px;
-}
-
-.venue-section h2 {
-  margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 @media (max-width: 600px) {
@@ -481,14 +370,22 @@ html[lang="ja"] .about-logo {
     margin-bottom: 26px;
     font-size: 15px;
   }
+
 }
 
-/* Confirmed spacing fix — v4 */
 .about-title {
+  margin: 0;
+  color: var(--text);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  text-align: center;
   font-size: 20px;
 }
 
 .about-logo {
+  margin: 76px auto 88px;
+  text-align: center;
   margin-top: 36px !important;
   margin-bottom: 52px !important;
 }
@@ -498,14 +395,28 @@ html[lang="ja"] .about-logo {
 }
 
 .tagline {
+  margin: 0 0 68px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  color: var(--accent);
+  text-align: center;
   margin-bottom: 52px;
 }
 
 .venue-section {
+  padding-top: 0;
+  border-top: 0;
   margin-top: 76px;
 }
 
 .venue-section h2 {
+  margin: 0 0 34px;
+  color: var(--text);
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-align: center;
   margin-bottom: 28px;
   font-size: 17px;
   font-weight: 600;
@@ -537,9 +448,9 @@ html[lang="ja"] .about-logo {
     margin-bottom: 24px;
     font-size: 16px;
   }
+
 }
 
-/* Next Gathering / Details page — v8 */
 .details-page {
   width: min(760px, 100%);
   padding: 66px 32px 64px;
@@ -550,17 +461,9 @@ html[lang="ja"] .about-logo {
   margin-bottom: 44px;
 }
 
-.details-kicker {
-  margin: 0 0 15px;
-  color: #222;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
 .details-title {
   margin: 0;
-  color: #CC6536;
+  color: var(--accent);
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -586,15 +489,9 @@ html[lang="ja"] .about-logo {
   height: auto;
 }
 
-.event-information {
-  width: min(560px, 100%);
-  margin: 74px auto 0;
-  text-align: left;
-}
-
 .event-information h2 {
   margin: 0 0 40px;
-  color: #222;
+  color: var(--text);
   font-size: 17px;
   font-weight: 600;
   text-align: center;
@@ -602,38 +499,6 @@ html[lang="ja"] .about-logo {
 
 .event-list {
   margin: 0;
-}
-
-.event-list > div {
-  display: grid;
-  grid-template-columns: 132px 1fr;
-  column-gap: 28px;
-  padding: 21px 0;
-  border-top: 1px solid #ddd;
-}
-
-.event-list > div:last-child {
-  border-bottom: 1px solid #ddd;
-}
-
-.event-list dt,
-.event-list dd {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.75;
-}
-
-.event-list dt {
-  font-weight: 500;
-}
-
-.event-list dd {
-  font-weight: 300;
-}
-
-.event-list dd span {
-  color: #666;
-  font-size: 13px;
 }
 
 .details-back-link {
@@ -678,14 +543,13 @@ html[lang="ja"] .about-logo {
   .details-back-link {
     margin-top: 60px;
   }
+
 }
 
-
-/* v10: event title block on the Next Gathering page */
 .details-event-heading {
   margin-top: 18px;
   text-align: center;
-  color: #cc6536;
+  color: var(--accent);
 }
 
 .details-event-heading p {
@@ -693,10 +557,6 @@ html[lang="ja"] .about-logo {
   font-size: clamp(16px, 2vw, 22px);
   line-height: 1.55;
   font-weight: 400;
-}
-
-.details-event-heading .details-event-series {
-  color: #111;
 }
 
 @media (max-width: 640px) {
@@ -708,23 +568,11 @@ html[lang="ja"] .about-logo {
     font-size: 15px;
     line-height: 1.55;
   }
+
 }
 
-/* Next Gathering text refinements — v11 */
-.details-event-series,
-.details-event-date {
+.details-event-series, .details-event-date {
   font-size: 13px;
-}
-
-.event-copy {
-  width: min(620px, 100%);
-  margin: 70px auto 0;
-  color: #222;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 2;
-  letter-spacing: 0.015em;
-  text-align: left;
 }
 
 .event-copy p {
@@ -736,7 +584,7 @@ html[lang="ja"] .about-logo {
 }
 
 .event-summary a {
-  color: #CC6536;
+  color: var(--accent);
   text-underline-offset: 0.18em;
   transition: opacity 0.2s ease;
 }
@@ -745,38 +593,12 @@ html[lang="ja"] .about-logo {
   opacity: 0.55;
 }
 
-.event-description {
-  margin-bottom: 82px;
-}
-
-.profiles h2 {
-  margin: 0 0 46px;
-  color: #222;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.profile + .profile {
-  margin-top: 66px;
-}
-
-.profile h3 {
-  margin: 0 0 14px;
-  color: #222;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
 .profile p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
-  .details-event-series,
-  .details-event-date {
+  .details-event-series, .details-event-date {
     font-size: 12px;
   }
 
@@ -806,28 +628,34 @@ html[lang="ja"] .about-logo {
   .profile h3 {
     font-size: 15px;
   }
+
 }
 
-
-/* Next Gathering refinements — v12 */
-.details-event-heading .details-event-series,
-.details-event-heading .details-event-date {
+.details-event-heading .details-event-series, .details-event-heading .details-event-date {
   font-size: clamp(12px, 1.45vw, 15px);
   line-height: 1.5;
 }
 
 .event-copy {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.015em;
   width: min(620px, 100%);
   margin: 0 auto;
   text-align: left;
 }
 
 .event-information {
+  margin: 74px auto 0;
+  text-align: left;
   width: 100%;
   margin-top: 66px;
 }
 
 .event-list > div {
+  display: grid;
   grid-template-columns: 110px 1fr;
   column-gap: 30px;
   padding: 18px 0;
@@ -838,18 +666,22 @@ html[lang="ja"] .about-logo {
   border-bottom: 1px solid #cfcfcf;
 }
 
-.event-list dt,
-.event-list dd {
+.event-list dt, .event-list dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
   font-weight: 500;
 }
 
 .event-list dt {
-  color: #222;
+  font-weight: 500;
+  color: var(--text);
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
 .event-list dd {
+  font-weight: 300;
   font-size: 15px;
   line-height: 1.72;
 }
@@ -861,11 +693,12 @@ html[lang="ja"] .about-logo {
 }
 
 .event-list a {
-  color: #CC6536;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .event-description {
+  margin-bottom: 82px;
   margin-top: 72px;
   font-size: 16px;
   line-height: 2.05;
@@ -880,6 +713,8 @@ html[lang="ja"] .about-logo {
 }
 
 .profiles h2 {
+  color: var(--text);
+  letter-spacing: 0.02em;
   margin: 0 0 42px;
   font-size: 17px;
   font-weight: 600;
@@ -891,6 +726,8 @@ html[lang="ja"] .about-logo {
 }
 
 .profile h3 {
+  color: var(--text);
+  line-height: 1.5;
   margin: 0 0 12px;
   font-size: 16px;
   font-weight: 600;
@@ -903,8 +740,7 @@ html[lang="ja"] .about-logo {
 }
 
 @media (max-width: 600px) {
-  .details-event-heading .details-event-series,
-  .details-event-heading .details-event-date {
+  .details-event-heading .details-event-series, .details-event-heading .details-event-date {
     font-size: 12px;
   }
 
@@ -938,24 +774,21 @@ html[lang="ja"] .about-logo {
   .profiles {
     margin-top: 68px;
   }
+
 }
 
-
-/* Next Gathering refinements — v13 */
 .details-event-heading .details-event-date {
   color: #111;
 }
 
-/* Next Gathering refinements — v15 */
 .details-event-heading .details-event-series {
+  color: #111;
   margin-bottom: 1.5em;
 }
 
-/* Shared hierarchy headers — v17
-   Match the confirmed About heading across all three pages. */
 .page-section-title {
   margin: 0;
-  color: #222;
+  color: var(--text);
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -963,8 +796,11 @@ html[lang="ja"] .about-logo {
   text-align: center;
 }
 
-/* Keep the hierarchy title consistent across About / Next Gathering / Archive. */
 .details-kicker {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   margin: 0 0 52px;
 }
 
@@ -985,7 +821,7 @@ html[lang="ja"] .about-logo {
 
 .archive-year {
   margin: 0 0 28px;
-  color: #222;
+  color: var(--text);
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1004,7 +840,7 @@ html[lang="ja"] .about-logo {
 }
 
 .archive-item a {
-  color: #222;
+  color: var(--text);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -1044,18 +880,7 @@ html[lang="ja"] .about-logo {
   .details-kicker {
     margin-bottom: 42px;
   }
-}
 
-
-/* Event overview refinements — v21 */
-.event-description-title {
-  margin: 0 0 3em;
-  color: #222;
-  font-size: inherit;
-  font-weight: 500;
-  letter-spacing: inherit;
-  line-height: inherit;
-  text-align: center;
 }
 
 .event-description-quote {
@@ -1065,8 +890,9 @@ html[lang="ja"] .about-logo {
 .event-description-quote p {
   margin-bottom: 0.7em;
 }
+
 .event-description-quote p:last-child {
-  text-align:right;
+  text-align: right;
 }
 
 .event-description-signature {
@@ -1074,6 +900,20 @@ html[lang="ja"] .about-logo {
   text-align: right;
 }
 
+.event-description-title {
+  margin: 0 0 3em;
+  color: var(--text);
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: center;
+  font-weight: 600;
+}
 
-.event-description-title{font-weight:600;}
-.event-description-quote p:first-child{font-style:italic;}
+.event-description-quote p:first-child {
+  font-style: italic;
+}
+
+.soldout {
+  color: var(--soldout) !important;
+}
