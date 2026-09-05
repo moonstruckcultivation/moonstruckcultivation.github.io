@@ -835,8 +835,12 @@ html[lang="ja"] .about-logo {
 }
 
 .archive-item {
+  padding: 0 0 28px;
   border-bottom: 1px solid #d8d8d8;
-  padding: 0 0 22px;
+}
+
+.archive-item + .archive-item {
+  padding-top: 28px;
 }
 
 .archive-item a {
