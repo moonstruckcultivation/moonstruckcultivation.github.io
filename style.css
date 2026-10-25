@@ -10,6 +10,10 @@ html {
   background: #fff;
 }
 
+a {
+  color: var(--accent);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -49,7 +53,7 @@ main {
 
 .main-nav > a, .menu-link {
   margin: 0;
-  color: var(--text);
+  color: var(--accent);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
@@ -163,7 +167,7 @@ footer {
   display: block;
   width: fit-content;
   margin: 104px 0 0;
-  color: var(--text);
+  color: var(--accent);
   font-size: 13px;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -256,7 +260,6 @@ footer {
   .back-link {
     margin-top: 84px;
   }
-
 }
 
 .about-page {
@@ -341,7 +344,6 @@ footer {
   .tagline span {
     font-size: 12px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -370,7 +372,6 @@ footer {
     margin-bottom: 26px;
     font-size: 15px;
   }
-
 }
 
 .about-title {
@@ -448,7 +449,6 @@ html[lang="ja"] .about-logo {
     margin-bottom: 24px;
     font-size: 16px;
   }
-
 }
 
 .details-page {
@@ -543,7 +543,6 @@ html[lang="ja"] .about-logo {
   .details-back-link {
     margin-top: 60px;
   }
-
 }
 
 .details-event-heading {
@@ -568,7 +567,6 @@ html[lang="ja"] .about-logo {
     font-size: 15px;
     line-height: 1.55;
   }
-
 }
 
 .details-event-series, .details-event-date {
@@ -628,7 +626,6 @@ html[lang="ja"] .about-logo {
   .profile h3 {
     font-size: 15px;
   }
-
 }
 
 .details-event-heading .details-event-series, .details-event-heading .details-event-date {
@@ -774,7 +771,6 @@ html[lang="ja"] .about-logo {
   .profiles {
     margin-top: 68px;
   }
-
 }
 
 .details-event-heading .details-event-date {
@@ -844,7 +840,7 @@ html[lang="ja"] .about-logo {
 }
 
 .archive-item a {
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -884,7 +880,6 @@ html[lang="ja"] .about-logo {
   .details-kicker {
     margin-bottom: 42px;
   }
-
 }
 
 .event-description-quote {
