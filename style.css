@@ -916,3 +916,7 @@ html[lang="ja"] .about-logo {
 .soldout {
   color: var(--soldout) !important;
 }
+
+.text-bold {
+  font-weight: bold;
+}
