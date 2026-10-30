@@ -946,14 +946,3 @@ text-decoration: none;
 color: var(--accent);
 text-decoration: none;
 }
-
-/* マウスを乗せたときの効果 */
-.gathering-link {
-opacity: 0.65;
-}
-
-/* 内側の文字に個別のホバー効果を適用しない */
-.gathering-link .menu-link,
-.gathering-link .details-link {
-opacity: 1;
-}
