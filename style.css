@@ -923,32 +923,37 @@ html[lang="ja"] .about-logo {
 
 /* Next Gathering 全体をクリック可能にする */
 .gathering-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
+display: block;
+color: var(--accent);
+text-decoration: none;
 }
 
-/* テキストの色を統一する */
+/* リンクに下線を表示しない */
+.gathering-link,
+.gathering-link,
+.gathering-link,
+.gathering-link,
+.gathering-link {
+color: var(--accent);
+text-decoration: none;
+}
+
+/* Next Gathering内の文字色を統一する */
 .gathering-link .menu-link,
 .gathering-link .date,
 .gathering-link h1,
 .gathering-link .details-link {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-/* マウスを乗せても下線を表示しない */
-.gathering-link:hover,
-.gathering-link:visited,
-.gathering-link:active,
-.gathering-link:hover .menu-link,
-.gathering-link:hover .date,
-.gathering-link:hover h1,
-.gathering-link:hover .details-link {
-  text-decoration: none;
+color: var(--accent);
+text-decoration: none;
 }
 
 /* マウスを乗せたときの効果 */
-.gathering-link:hover {
-  opacity: 0.65;
+.gathering-link {
+opacity: 0.65;
+}
+
+/* 内側の文字に個別のホバー効果を適用しない */
+.gathering-link .menu-link,
+.gathering-link .details-link {
+opacity: 1;
 }
